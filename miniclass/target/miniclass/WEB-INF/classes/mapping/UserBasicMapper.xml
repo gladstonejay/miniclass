@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miniclass.dao.UserBasicDao" >
+  <resultMap id="BaseResultMap" type="com.miniclass.entity.UserBasic" >
+    <id column="Id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    <result column="user_nname" property="userNname" jdbcType="VARCHAR" />
+    <result column="user_type" property="userType" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+      <result column="score" property="score" jdbcType="INTEGER" />
+      <result column="regist_time" property="registTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    Id, user_id, user_nname, user_type, password, regist_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user_basic
+    where Id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user_basic
+    where Id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.miniclass.entity.UserBasic" >
+    insert into user_basic (Id, user_id, user_nname, 
+      user_type, password,score, regist_time
+      )
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userNname,jdbcType=VARCHAR}, 
+      #{userType,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},#{score,jdbcType=INTEGER}, #{registTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.miniclass.entity.UserBasic" >
+    insert into user_basic
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        Id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="userNname != null" >
+        user_nname,
+      </if>
+      <if test="userType != null" >
+        user_type,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="registTime != null" >
+        regist_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="userNname != null" >
+        #{userNname,jdbcType=VARCHAR},
+      </if>
+      <if test="userType != null" >
+        #{userType,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="registTime != null" >
+        #{registTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.miniclass.entity.UserBasic" >
+    update user_basic
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="userNname != null" >
+        user_nname = #{userNname,jdbcType=VARCHAR},
+      </if>
+      <if test="userType != null" >
+        user_type = #{userType,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="registTime != null" >
+        regist_time = #{registTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where Id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.miniclass.entity.UserBasic" >
+    update user_basic
+    set user_id = #{userId,jdbcType=VARCHAR},
+      user_nname = #{userNname,jdbcType=VARCHAR},
+      user_type = #{userType,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      regist_time = #{registTime,jdbcType=TIMESTAMP}
+    where Id = #{id,jdbcType=INTEGER}
+  </update>
+    <update id="updateUserScore" parameterType="com.miniclass.entity.UserBasic" >
+        update user_basic set score = score+10 where user_id = #{userId,jdbcType=INTEGER}
+    </update>
+    <select id="selectUserId" resultType = "int" parameterType="java.lang.String">
+        select count(*) from user_basic where user_id = #{userId,jdbcType=VARCHAR};
+    </select>
+    <select id="selectUserNname" resultType ="int" parameterType="java.lang.String" >
+        select count(*) from user_basic where user_nname = #{userNname,jdbcType=VARCHAR}
+    </select>
+    <select id="selectUserPassword" resultType ="int" parameterType="java.lang.String" >
+        select count(*) from user_basic where password = #{password,jdbcType=VARCHAR}
+    </select>
+    <select id="getUserRankByScore" resultMap="BaseResultMap">
+        SELECT * FROM user_basic ORDER  BY  score DESC limit 10;
+    </select>
+    <select id="getUserById" resultMap="BaseResultMap" parameterType="java.lang.String">
+        SELECT * FROM user_basic where user_id = #{userId,jdbcType=VARCHAR};
+    </select>
+
+</mapper>
