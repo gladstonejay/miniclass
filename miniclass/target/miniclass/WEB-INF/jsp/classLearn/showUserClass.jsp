@@ -24,9 +24,6 @@
         <%@ include file="../common/bottom.jsp" %>
         <div class="content">
 
-            <div class="card">
-
-            </div>
             <div class="card demo-card-header-pic">
                 <div valign="bottom" class="card-header color-white no-border no-padding">
                     <img class='card-cover' src="../../../static/imags/tab1_milk.png" alt="">
@@ -43,13 +40,33 @@
                 </div>
             </div>
 
+            <div class="card demo-card-header-pic">
+                <div valign="bottom" class="card-header color-white no-border no-padding">
+                    <img class='card-cover' src="../../../static/imags/precast.png" alt="">
+                </div>
+            </div>
+
+
             <c:forEach items="${videoInfoList}" var="item" varStatus="xh">
+                <c:if test="${item.orderId=='1'}">
+                <p style="text-align: center"><img src="../../../static/imags/month/5.0.png"  width="163" ></p>
+                </c:if>
+                <c:if test="${item.orderId=='3' || item.orderId=='7' || item.orderId=='11' ||item.orderId=='15' ||item.orderId=='19' ||item.orderId=='23' ||item.orderId=='27'}">
+                <p style="text-align: center"><img src="../../../static/imags/month/${((item.orderId-3)/4+6)}.png"  width="163" ></p>
+                </c:if>
             <div class="card">
                 <div class="card-content">
                     <div class="list-block media-list">
                         <ul>
                             <li>
+                                <c:choose>
+                                <c:when test="${item.videoId !=null }">
                                 <a href="/classLearn/showOneClass.j?id=${item.orderId}" external class="item-link item-content">
+                                    </c:when>
+                                    <c:otherwise>
+                                        <a href="#" external class="item-link item-content">
+                                    </c:otherwise>
+                                    </c:choose>
                                     <div class="item-media"><i class="icon icon-f7"></i></div>
                                 <div class="item-media">
                                     <%--<img src="../../../static/imags/video${item.orderId}.png" width="44">--%>
@@ -57,7 +74,7 @@
                                 </div>
                                 <div class="item-inner">
                                     <div class="item-title-row">
-                                        <div class="item-title">第${item.orderId}课</div>
+                                        <div class="item-title">第${item.orderId}讲</div>
                                     </div>
                                     <div class="item-subtitle">${item.title}</div>
                                 </div>

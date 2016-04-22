@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import com.miniclass.entity.UserBasic;
 import com.miniclass.entity.UserRecord;
 import com.miniclass.entity.VideoInfo;
+import com.miniclass.vo.VideoInfoVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.miniclass.service.UserBasicService;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -34,11 +36,25 @@ public class UserBasicController {
      * 课程列表
      */
     @RequestMapping(value="/showUserClass")
-    public ModelAndView showUserClass(){
+    public ModelAndView showUserClass(HttpServletRequest request){
 
         ModelAndView model = new ModelAndView("/classLearn/showUserClass");
         List<VideoInfo> videoInfoList = userService.getAllVideo();
-        model.addObject("videoInfoList",videoInfoList);
+        List<VideoInfoVo> videoInfoVos = new ArrayList<VideoInfoVo>();
+        VideoInfoVo videoInfoVo = null;
+        HttpSession session = request.getSession();
+        String userId = (String)session.getAttribute("user");
+
+        if (userId != null) {
+            List<UserRecord> userRecords = userService.getUserDoneClassRecord(userId);
+            if ( userRecords.size() > 0) {
+                for (VideoInfo videoInfo : videoInfoList) {
+                    videoInfoVo = new VideoInfoVo(videoInfo);
+                    videoInfoVos.add(videoInfoVo);
+                }
+            }
+        }
+        log.info("videoinfoVos is "+ videoInfoVos);
 
         return model;
     }

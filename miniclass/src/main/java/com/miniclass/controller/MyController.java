@@ -81,8 +81,7 @@ public class MyController extends KaptchaExtend {
 
         ModelAndView model = new ModelAndView("/my/my");
         HttpSession session = request.getSession();
-        String userId = new String();
-        userId = (String)session.getAttribute("user");
+        String userId = (String)session.getAttribute("user");
         UserBasic userBasic = null;
         userBasic = this.userBasicService.getUserById(userId);
         UserShowInfoVo userShowInfoVo = new UserShowInfoVo();

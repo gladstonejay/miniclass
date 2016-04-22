@@ -2,6 +2,8 @@ package com.miniclass.dao;
 
 import com.miniclass.entity.UserRecord;
 
+import java.util.List;
+
 public interface UserRecordDao {
     int deleteByPrimaryKey(Integer id);
 
@@ -18,5 +20,7 @@ public interface UserRecordDao {
     public int isRecord(UserRecord record);
 
     public int getUserRecordCount(String userId);
+
+    public List<UserRecord> getUserDoneClassRecord(String userId);
 
 }

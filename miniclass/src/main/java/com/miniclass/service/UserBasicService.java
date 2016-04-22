@@ -22,6 +22,8 @@ public interface UserBasicService {
 
     public List<VideoInfo> getAllVideo();
 
+    public List<UserRecord> getUserDoneClassRecord(String userId);
+
     public VideoInfo getVideoById(int videoId);
 
     public int isRecorded(UserRecord userRecord);

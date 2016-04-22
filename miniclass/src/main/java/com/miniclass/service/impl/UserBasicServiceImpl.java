@@ -81,4 +81,9 @@ public class UserBasicServiceImpl implements UserBasicService{
 
         return this.userDao.getUserById(userId);
     }
+
+    public List<UserRecord> getUserDoneClassRecord(String userId){
+
+        return this.userRecordDao.getUserDoneClassRecord(userId);
+    }
 }
