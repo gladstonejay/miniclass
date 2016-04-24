@@ -12,13 +12,13 @@
         <span class="icon" ><img src="../../../static/imags/tab1-active.png" width="36" ></span>
         <span class="tab-label">课程学习</span>
     </a>
-    <a class="tab-item" href="/rank/showRank.j" external>
-        <span class="icon"><img src="../../../static/imags/tab2.png" width="36" ></span>
-        <span class="tab-label">学习排名</span>
-    </a>
     <a class="tab-item" href="/review/showTips.j" external>
         <span class="icon"><img src="../../../static/imags/tab3.png" width="30" ></span>
         <span class="tab-label">温故知新</span>
+    </a>
+    <a class="tab-item" href="/rank/showRank.j" external>
+        <span class="icon"><img src="../../../static/imags/tab2.png" width="36" ></span>
+        <span class="tab-label">学习排名</span>
     </a>
     <a class="tab-item" href="/my/my.j" external>
         <span class="icon"><img src="../../../static/imags/tab4.png" width="30" ></span>

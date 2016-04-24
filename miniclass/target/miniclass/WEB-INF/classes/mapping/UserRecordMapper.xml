@@ -6,6 +6,7 @@
     <result column="user_id" property="userId" jdbcType="VARCHAR" />
     <result column="type" property="type" jdbcType="VARCHAR" />
     <result column="mid" property="mid" jdbcType="INTEGER" />
+    <result column="score" property="score" jdbcType="INTEGER" />
     <result column="date" property="date" jdbcType="DATE" />
   </resultMap>
   <sql id="Base_Column_List" >
@@ -30,9 +31,9 @@
   </delete>
   <insert id="insert" parameterType="com.miniclass.entity.UserRecord" >
     insert into user_record (id, user_id, type, 
-      mid, date)
+      mid, score, date)
     values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
-      #{mid,jdbcType=INTEGER}, curdate())
+      #{mid,jdbcType=INTEGER},#{score,jdbcType=INTEGER}, curdate())
   </insert>
   <insert id="insertSelective" parameterType="com.miniclass.entity.UserRecord" >
     insert into user_record

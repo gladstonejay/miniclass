@@ -23,11 +23,40 @@
         <%@ include file="../common/bottom3.jsp" %>
         <div class="content">
             <div class="buttons-tab">
-                <a href="#tab1" class="tab-link active button">微信答疑总结</a>
+                <a href="#tab1" class="tab-link active button">考试</a>
                 <a href="#tab2" class="tab-link button">课件精要</a>
+                <a href="#tab3" class="tab-link button">微信答疑总结</a>
             </div>
                 <div class="tabs">
                     <div id="tab1" class="tab active">
+                        <c:forEach items="${examList}" var="item" varStatus="xh">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="list-block media-list">
+                                        <ul>
+                                            <li >
+                                                <a href="/review/showOneExam.j?id=${item.orderId}" external class="item-link item-content">
+                                                    <div class="item-media">
+                                                        <img src="../../../static/imags/video${item.orderId}.png" width="44" >
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">第${item.orderId}次考试</div>
+                                                        </div>
+                                                        <div class="item-subtitle">${item.title}</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                    <%--<div class="card-footer">--%>
+                                    <%--<span>2016/04/12</span>--%>
+                                    <%--</div>--%>
+                            </div>
+                        </c:forEach>
+                    </div>
+                    <div id="tab3" class="tab">
                         <c:forEach items="${weixinList}" var="item" varStatus="xh">
                         <div class="card">
                                 <div class="card-content">

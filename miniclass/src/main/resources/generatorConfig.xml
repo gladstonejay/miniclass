@@ -5,6 +5,7 @@
 
 <generatorConfiguration>
     <classPathEntry location="D:\Java\repo\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar"/>
+    <!--<classPathEntry location="/Users/admin/gladstone/m2_repr/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar"/>-->
     <context id="DB2Tables" targetRuntime="MyBatis3" >
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
@@ -50,8 +51,8 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table tableName="question_answer"
-               domainObjectName="QuestionAnswer"
+        <table tableName="exam"
+               domainObjectName="Exam"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"

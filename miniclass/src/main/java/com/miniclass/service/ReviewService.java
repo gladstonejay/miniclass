@@ -1,5 +1,6 @@
 package com.miniclass.service;
 
+import com.miniclass.entity.Exam;
 import com.miniclass.entity.QuestionAnswer;
 import java.util.List;
 
@@ -10,4 +11,6 @@ public interface ReviewService {
 
     public List<QuestionAnswer> getAllArticle(String type);
     public QuestionAnswer getOneArticle(Integer id, String type);
+    public List<Exam> getAllExam();
+    public List<Exam> getOneExam(Integer id);
 }

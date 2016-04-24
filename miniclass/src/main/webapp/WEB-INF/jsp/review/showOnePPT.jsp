@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<jsp:include page="../common/cmnjs.jsp"></jsp:include>
+<jsp:include page="../common/cmnjs.min.jsp"></jsp:include>
 
 </body>
 </html>

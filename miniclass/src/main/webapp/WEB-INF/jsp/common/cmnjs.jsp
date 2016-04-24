@@ -9,7 +9,7 @@
 
 <script type='text/javascript' src='${ctx}/static/js/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='${ctx}/static/js/sm.min.js' charset='utf-8'></script>
-<script type='text/javascript' src='${ctx}/static/js/sm-extend.min.js' charset='utf-8'></script>
+<%--<script type='text/javascript' src='${ctx}/static/js/sm-extend.min.js' charset='utf-8'></script>--%>
 <script type='text/javascript' src="${ctx}/static/js/jquery.min.js" charset='utf-8'></script>
 <script type="text/javascript" src="${ctx}/static/js/jquery-mvalidate.js"></script>
 <link rel="stylesheet" type="text/css" href="${ctx}/static/css/validate.css">

@@ -1,9 +1,11 @@
 package com.miniclass.controller;
 
 import javax.annotation.Resource;
+import javax.enterprise.inject.Model;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.miniclass.entity.Exam;
 import com.miniclass.entity.QuestionAnswer;
 import com.miniclass.entity.UserRecord;
 import com.miniclass.service.ReviewService;
@@ -35,6 +37,13 @@ public class ReviewController {
     public ModelAndView showTips(){
 
         ModelAndView model = new ModelAndView("/review/showTips");
+        List<Exam> resultExam = null;
+        try{
+            resultExam = reviewService.getAllExam();
+        }
+        catch (Exception e){
+            log.error(e.getMessage());
+        }
         List<QuestionAnswer> resultWeixin = null;
         try{
             resultWeixin = reviewService.getAllArticle("weixin");
@@ -50,6 +59,7 @@ public class ReviewController {
             log.error(e.getMessage());
         }
 
+        model.addObject("examList", resultExam);
         model.addObject("weixinList", resultWeixin);
         model.addObject("pptList", resultPPT);
 
@@ -76,6 +86,7 @@ public class ReviewController {
         userRecord.setMid(id);
         //type： video, weixin, ppt
         userRecord.setType("weixin");
+        userRecord.setScore(0);
         Integer count = this.userService.isRecorded(userRecord);
         if (count == 0){
             this.userService.insertUserRecord(userRecord);
@@ -103,8 +114,9 @@ public class ReviewController {
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
         userRecord.setMid(id);
-        //type： video, weixin, ppt
+        //type： video, weixin, ppt,exam
         userRecord.setType("ppt");
+        userRecord.setScore(0);
         Integer count = this.userService.isRecorded(userRecord);
         if (count == 0){
             this.userService.insertUserRecord(userRecord);
@@ -113,4 +125,34 @@ public class ReviewController {
 
         return modelAndView;
     }
+
+    @RequestMapping(value = "showOneExam", method = RequestMethod.GET)
+    public ModelAndView showOneExam(HttpServletRequest request)
+    {
+
+        Integer id =Integer.parseInt( request.getParameter("id"));
+        List<Exam> exam = this.reviewService.getOneExam(id);
+
+        ModelAndView modelAndView = new ModelAndView("/review/showOneExam");
+        modelAndView.addObject("exam", exam);
+
+        Integer examLenth = exam.size();
+        modelAndView.addObject("examLenth", examLenth);
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "examResult", method = RequestMethod.POST)
+    public ModelAndView examResult(HttpServletRequest request)
+    {
+
+        String a = request.getParameter("picker2");
+        log.info("answer A is " + a);
+        ModelAndView modelAndView = new ModelAndView("/review/examResult");
+
+        modelAndView.addObject("a",a);
+
+        return modelAndView;
+    }
+
 }

@@ -11,6 +11,8 @@ public class UserRecord {
 
     private Integer mid;
 
+    private Integer score;
+
     private Date date;
 
     public Integer getId() {
@@ -44,6 +46,10 @@ public class UserRecord {
     public void setMid(Integer mid) {
         this.mid = mid;
     }
+
+    public Integer getScore(){ return score;}
+
+    public  void setScore(Integer score){ this.score = score;}
 
     public Date getDate() {
         return date;

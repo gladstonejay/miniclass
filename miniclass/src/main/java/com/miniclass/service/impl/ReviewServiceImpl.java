@@ -2,6 +2,8 @@ package com.miniclass.service.impl;
 
 import javax.annotation.Resource;
 
+import com.miniclass.dao.ExamDao;
+import com.miniclass.entity.Exam;
 import org.springframework.stereotype.Service;
 import com.miniclass.entity.QuestionAnswer;
 import com.miniclass.dao.QuestionAnswerDao;
@@ -17,6 +19,8 @@ public class ReviewServiceImpl implements ReviewService{
 
     @Resource
     private QuestionAnswerDao userDao;
+    @Resource
+    private ExamDao examDao;
 
     public List<QuestionAnswer> getAllArticle(String type){
 
@@ -26,5 +30,14 @@ public class ReviewServiceImpl implements ReviewService{
     public QuestionAnswer getOneArticle(Integer id, String type){
 
         return this.userDao.getOneArticle(id,type);
+    }
+    public List<Exam> getAllExam(){
+
+        return this.examDao.getAllExam();
+    }
+
+    public List<Exam> getOneExam(Integer id){
+
+        return this.examDao.getOneExam(id);
     }
 }

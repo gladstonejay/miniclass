@@ -54,7 +54,9 @@ public class UserBasicController {
                 }
             }
         }
-        log.info("videoinfoVos is "+ videoInfoVos);
+        log.info("videoinfoVos is " + videoInfoVos);
+
+        model.addObject("videoInfoList", videoInfoList);
 
         return model;
     }
@@ -74,6 +76,7 @@ public class UserBasicController {
         userRecord.setMid(videoId);
         //type： video, weixin, ppt
         userRecord.setType("video");
+        userRecord.setScore(0);
         Integer count = this.userService.isRecorded(userRecord);
         if (count == 0){
             this.userService.insertUserRecord(userRecord);
