@@ -26,6 +26,7 @@
             <div class="buttons-tab">
                 <a href="#tab1" class="tab-link active button">前十达人</a>
             </div>
+            <h6>积分获取规则：每次听课，考试，阅读文章都可以获得相应的分数；每天只能获取同一内容的积分一次</h6>
                 <div class="tabs">
                     <div id="tab1" class="tab active">
                         <div class="list-block">

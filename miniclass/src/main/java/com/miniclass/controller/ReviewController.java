@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -135,9 +136,7 @@ public class ReviewController {
 
         ModelAndView modelAndView = new ModelAndView("/review/showOneExam");
         modelAndView.addObject("exam", exam);
-
-        Integer examLenth = exam.size();
-        modelAndView.addObject("examLenth", examLenth);
+        modelAndView.addObject("id", id);
 
         return modelAndView;
     }
@@ -146,11 +145,37 @@ public class ReviewController {
     public ModelAndView examResult(HttpServletRequest request)
     {
 
-        String a = request.getParameter("picker2");
-        log.info("answer A is " + a);
+        Integer id =Integer.parseInt(request.getParameter("id"));
+
+        String[] userArray = new String[]{"E","E","E","E","E"};
+        List<String> answerList = new ArrayList();
+        String[] checkArray = new String[5];
+        String right = new String("恭喜你，全部答对，获得100分");
+        String wrong = new String("抱歉，");
+        for (int i = 0; i<5 ; i++)
+        {
+            String ident = "picker" + (i+1);
+            if ( request.getParameter(ident) != "" ) {
+                userArray[i] = request.getParameter(ident);
+            }
+            log.info("userArray is " + userArray[i]);
+        }
+
+        List<Exam> answer = this.reviewService.getOneExam(id);
+        for(Exam exam:answer){
+            answerList.add(exam.getAnswer());
+        }
+        String[] answerArray = answerList.toArray(new String[5]);
+        for (int i = 0; i<5 ; i++)
+        {
+            log.info("answerArray is " + answerArray[i]);
+        }
+
+
         ModelAndView modelAndView = new ModelAndView("/review/examResult");
 
-        modelAndView.addObject("a",a);
+
+        //modelAndView.addObject("a",a);
 
         return modelAndView;
     }

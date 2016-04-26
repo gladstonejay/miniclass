@@ -24,7 +24,7 @@
         <%@ include file="../common/bottom3.jsp" %>
 
         <div class="content">
-            <form class="zform zform-radius" action="/review/examResult.j" method="post" id="form1">
+            <form class="zform zform-radius" action="/review/examResult.j?id=${id}" method="post" id="form1">
             <c:forEach items="${exam}" var="item" varStatus="xh">
             <div class="content-padded"><p> ${item.context} </p></div>
                 <div class="content-padded"><p> ${item.a} </p></div>

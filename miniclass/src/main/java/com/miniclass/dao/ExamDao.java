@@ -20,4 +20,5 @@ public interface ExamDao {
     public List<Exam> getAllExam();
 
     public List<Exam> getOneExam(Integer id);
+
 }
