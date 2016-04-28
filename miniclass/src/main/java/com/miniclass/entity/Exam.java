@@ -21,6 +21,8 @@ public class Exam {
 
     private String answer;
 
+    private String answerContext;
+
     public Integer getId() {
         return id;
     }
@@ -100,4 +102,8 @@ public class Exam {
     public void setAnswer(String answer) {
         this.answer = answer == null ? null : answer.trim();
     }
+
+    public String getAnswerContext() { return answerContext ;}
+
+    public void setAnswerContext(String answerContext){ this.answerContext = answerContext;}
 }

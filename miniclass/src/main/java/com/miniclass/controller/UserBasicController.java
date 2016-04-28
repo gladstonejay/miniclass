@@ -54,7 +54,6 @@ public class UserBasicController {
                 }
             }
         }
-        log.info("videoinfoVos is " + videoInfoVos);
 
         model.addObject("videoInfoList", videoInfoList);
 

@@ -21,6 +21,8 @@ public interface UserRecordDao {
 
     public int getUserRecordCount(String userId);
 
+    public int getUserExamCount(String userId);
+
     public List<UserRecord> getUserDoneClassRecord(String userId);
 
 }

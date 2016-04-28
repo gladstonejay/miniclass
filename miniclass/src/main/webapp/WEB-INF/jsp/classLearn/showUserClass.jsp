@@ -19,7 +19,7 @@
 <div class="page-group">
     <div class="page page-current">
         <header class="bar bar-nav">
-            <h1 class="title"><span class="icon" ><img src="../../../static/imags/tab4-active.png" width="22" ></span> 我的课程</h1>
+            <h1 class="title"><span class="icon" ><img src="../../../static/imags/tab/tab4-active.png" width="22" ></span> 我的课程</h1>
         </header>
         <%@ include file="../common/bottom.jsp" %>
         <div class="content">
@@ -29,7 +29,7 @@
                     <img class='card-cover' src="../../../static/imags/tab1_milk.png" alt="">
                 </div>
                 <div class="card-content">
-                    <div class="card-content-inner">
+                    <div class="card-content-inner" style="text-align: center">
                         <p>各位母婴店的销售精英们：大家好</p>
                         <p>母婴营养达人微课堂开课啦！</p>
                         <p>本课程旨在帮您：</p>
@@ -41,8 +41,17 @@
             </div>
 
             <div class="card demo-card-header-pic">
-                <div valign="bottom" class="card-header color-white no-border no-padding">
-                    <img class='card-cover' src="../../../static/imags/precast.png" alt="">
+                <div class="card-content">
+                    <div class="card-content-inner" style="text-align: center">
+                        <p>还在比价格？比赠品？</p>
+                        <p>那就被淘汰了！</p>
+                        <p>你知道什么是奶粉销售的制胜法宝吗？</p>
+                        <p>你知道如何才能成为老板满意、妈妈信赖的营养顾问吗？</p>
+                        <P>欢迎来到母婴营养微课堂，开启你专业母婴营养顾问之旅。</P>
+                    </div>
+                </div>
+                <div>
+                    <p style="text-align: center"> <img src="../../../static/imags/precast.png" width="296"></p>
                 </div>
             </div>
 

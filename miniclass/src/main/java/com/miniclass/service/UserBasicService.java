@@ -34,6 +34,8 @@ public interface UserBasicService {
 
     public int getUserRecordCount(String userId);
 
+    public int getUserExamCount(String userId);
+
     public UserBasic getUserById(String userId);
 
 }

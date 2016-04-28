@@ -16,6 +16,8 @@ public class UserShowInfoVo extends Vo{
 
     private String userType;
 
+    private Integer examCount;
+
 
     public Integer getCount() {
         return count;
@@ -48,4 +50,8 @@ public class UserShowInfoVo extends Vo{
         this.userType = userType;
     }
     public String getUserType(){ return userType;}
+
+    public void setExamCount(Integer examCount) { this.examCount = examCount;}
+
+    public Integer getExamCount(){ return examCount;}
 }

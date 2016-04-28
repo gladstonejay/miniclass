@@ -18,7 +18,7 @@
 <div class="page-group">
     <div class="page page-current">
         <header class="bar bar-nav">
-            <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab3-active.png" width="22" ></span> 温故知新</h1>
+            <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab/tab3-active.png" width="22" ></span> 温故知新</h1>
         </header>
         <%@ include file="../common/bottom3.jsp" %>
         <div class="content">
@@ -37,7 +37,7 @@
                                             <li >
                                                 <a href="/review/showOneExam.j?id=${item.orderId}" external class="item-link item-content">
                                                     <div class="item-media">
-                                                        <img src="../../../static/imags/video${item.orderId}.png" width="44" >
+                                                        <img src="../../../static/imags/video/video${item.orderId}.png" width="44" >
                                                     </div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
@@ -65,7 +65,7 @@
                                             <li >
                                                 <a href="/review/showOneTip.j?id=${item.itemId}" external class="item-link item-content">
                                                     <div class="item-media">
-                                                        <img src="../../../static/imags/tab3.png" width="44" >
+                                                        <img src="../../../static/imags/tab/tab3.png" width="44" >
                                                     </div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">
@@ -93,7 +93,7 @@
                                             <li >
                                                 <a href="/review/showOnePPT.j?id=${item.itemId}" external class="item-link item-content">
                                                     <div class="item-media">
-                                                        <img src="../../../static/imags/video${item.itemId}.png" width="44" >
+                                                        <img src="../../../static/imags/video/video${item.itemId}.png" width="44" >
                                                     </div>
                                                     <div class="item-inner">
                                                         <div class="item-title-row">

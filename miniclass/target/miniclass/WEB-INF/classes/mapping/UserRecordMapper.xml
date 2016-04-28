@@ -105,4 +105,7 @@
     <select id="getUserDoneClassRecord" resultMap="BaseResultMap" parameterType="java.lang.String">
         SELECT * FROM user_record where user_id = #{userId,jdbcType=VARCHAR} and type="video" group by mid;
     </select>
+    <select id="getUserExamCount" resultType="int" parameterType="java.lang.String">
+        SELECT count(*) FROM user_record where user_id = #{userId,jdbcType=VARCHAR} and type="exam"
+    </select>
 </mapper>

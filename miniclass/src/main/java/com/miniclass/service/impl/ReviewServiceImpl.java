@@ -41,4 +41,8 @@ public class ReviewServiceImpl implements ReviewService{
         return this.examDao.getOneExam(id);
     }
 
+    public Exam getOneExamContext(Integer order_id , Integer item_id){
+
+        return this.examDao.getOneExamContext(order_id, item_id);
+    }
 }

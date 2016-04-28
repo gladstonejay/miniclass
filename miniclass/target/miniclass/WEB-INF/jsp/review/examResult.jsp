@@ -15,13 +15,17 @@
 <body>
   <div class="page page-current">
     <header class="bar bar-nav">
+        <button class="button button-link button-nav pull-left">
+            <span class="icon icon-left"></span><a href="/review/showTips.j" external style="color:#FFFFFF" >
+            返回
+        </a></button>
       <h1 class='title'>成绩单</h1>
     </header>
 
     <%@ include file="../common/bottom3.jsp" %>
 
-    <div class="content">
-      <p>${a}</p>
+    <div class="content" style="text-align: center">
+      <p>${result}</p>
 
 
     </div>

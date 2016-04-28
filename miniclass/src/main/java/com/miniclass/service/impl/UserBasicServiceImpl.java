@@ -86,4 +86,9 @@ public class UserBasicServiceImpl implements UserBasicService{
 
         return this.userRecordDao.getUserDoneClassRecord(userId);
     }
+
+    public int getUserExamCount(String userId){
+
+        return this.userRecordDao.getUserExamCount(userId);
+    }
 }

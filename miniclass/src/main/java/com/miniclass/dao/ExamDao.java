@@ -1,6 +1,7 @@
 package com.miniclass.dao;
 
 import com.miniclass.entity.Exam;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,5 +21,7 @@ public interface ExamDao {
     public List<Exam> getAllExam();
 
     public List<Exam> getOneExam(Integer id);
+
+    public Exam getOneExamContext(@Param("orderId")Integer order_id, @Param("itemId")Integer item_id);
 
 }

@@ -19,7 +19,7 @@
 <div class="page-group">
   <div class="page page-current">
     <header class="bar bar-nav">
-      <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab1-active.png" width="32" ></span> 第${videoInfo.orderId}讲:${videoInfo.title}</h1>
+      <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab/tab1-active.png" width="32" ></span> 第${videoInfo.orderId}讲:${videoInfo.title}</h1>
     </header>
     <%@ include file="../common/bottom.jsp" %>
     <div class="content">

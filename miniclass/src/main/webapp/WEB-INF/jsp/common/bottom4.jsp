@@ -9,20 +9,20 @@
 
 <nav class="bar bar-tab">
     <a class="tab-item" href="/classLearn/showUserClass.j" external>
-        <span class="icon" ><img src="../../../static/imags/tab1.png" width="36" ></span>
+        <span class="icon" ><img src="../../../static/imags/tab/tab1.png" width="36" ></span>
         <span class="tab-label">课程学习</span>
     </a>
     <a class="tab-item" href="/review/showTips.j" external>
-        <span class="icon"><img src="../../../static/imags/tab3.png" width="30" ></span>
+        <span class="icon"><img src="../../../static/imags/tab/tab3.png" width="30" ></span>
         <span class="tab-label">温故知新</span>
     </a>
     <a class="tab-item" href="/rank/showRank.j" external>
-        <span class="icon"><img src="../../../static/imags/tab2.png" width="36" ></span>
+        <span class="icon"><img src="../../../static/imags/tab/tab2.png" width="36" ></span>
         <span class="tab-label">学习排名</span>
     </a>
 
     <a class="tab-item active" href="/my/my.j" external>
-        <span class="icon"><img src="../../../static/imags/tab4-active.png" width="30" ></span>
+        <span class="icon"><img src="../../../static/imags/tab/tab4-active.png" width="30" ></span>
         <span class="tab-label">我的</span>
     </a>
 </nav>

@@ -39,7 +39,7 @@ public class LoginFilter extends BaseController implements Filter{
             //user = (UserBasic) session.getAttribute("user");
             userId = (String)session.getAttribute("user");
         // url特殊处理：放行url
-        if ( (url.contains("showOneClass.j") || url.endsWith("my.j") || url.contains("showOneTip.j") || url.contains("showOnePPT.j")) &&  null == userId ){
+        if ( (url.contains("showOneClass.j") || url.endsWith("my.j") || url.contains("showOneTip.j") || url.contains("showOnePPT.j") || url.contains("showOneExam.j") ) &&  null == userId ){
         //if ( url.endsWith("my.j")  &&  null == user ){
 
             //不满足条件就跳转到其他页面

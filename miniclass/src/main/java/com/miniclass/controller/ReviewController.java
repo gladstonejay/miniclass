@@ -146,19 +146,18 @@ public class ReviewController {
     {
 
         Integer id =Integer.parseInt(request.getParameter("id"));
+        ModelAndView modelAndView = new ModelAndView("/review/examResult");
 
         String[] userArray = new String[]{"E","E","E","E","E"};
         List<String> answerList = new ArrayList();
-        String[] checkArray = new String[5];
+        List<String> checkArray = new ArrayList();
         String right = new String("恭喜你，全部答对，获得100分");
         String wrong = new String("抱歉，");
-        for (int i = 0; i<5 ; i++)
-        {
+        for (int i = 0; i<5 ; i++) {
             String ident = "picker" + (i+1);
             if ( request.getParameter(ident) != "" ) {
                 userArray[i] = request.getParameter(ident);
             }
-            log.info("userArray is " + userArray[i]);
         }
 
         List<Exam> answer = this.reviewService.getOneExam(id);
@@ -166,16 +165,47 @@ public class ReviewController {
             answerList.add(exam.getAnswer());
         }
         String[] answerArray = answerList.toArray(new String[5]);
-        for (int i = 0; i<5 ; i++)
-        {
-            log.info("answerArray is " + answerArray[i]);
+
+        int score = 0;
+        for(int i=0; i<5 ; i++){
+            if (userArray[i].equals(answerArray[i]))
+            {
+                score += 20;
+            }
+            else{
+                checkArray.add(Integer.toString(i+1));
+            }
         }
 
+        if (score != 100 ) {
 
-        ModelAndView modelAndView = new ModelAndView("/review/examResult");
+            wrong +=  "您的得分最后为 :" + score + "," ;
+            for (String tmp : checkArray) {
 
+                Exam exam = this.reviewService.getOneExamContext(id, Integer.parseInt(tmp));
+                wrong += "<br>其中第" + tmp + "题" + exam.getContext() + "的答案为 ：<br>" + exam.getAnswerContext() + "; ";
+            }
+            modelAndView.addObject("result",wrong);
+        }
+        else {
+            modelAndView.addObject("result", right);
+        }
 
-        //modelAndView.addObject("a",a);
+        HttpSession session = request.getSession();
+        String userId = new String();
+        userId = (String)session.getAttribute("user");
+
+        UserRecord userRecord = new UserRecord();
+        userRecord.setUserId(userId);
+        userRecord.setMid(id);
+        //type： video, weixin, ppt,exam
+        userRecord.setType("exam");
+        userRecord.setScore(score);
+        Integer count = this.userService.isRecorded(userRecord);
+        if (count == 0){
+            this.userService.insertUserRecord(userRecord);
+            this.userService.updateUserScore(userId);
+        }
 
         return modelAndView;
     }

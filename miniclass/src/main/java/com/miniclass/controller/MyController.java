@@ -87,6 +87,7 @@ public class MyController extends KaptchaExtend {
         UserShowInfoVo userShowInfoVo = new UserShowInfoVo();
         Integer score = userBasic.getScore();
         userShowInfoVo.setCount( this.userBasicService.getUserRecordCount(userId));
+        userShowInfoVo.setExamCount( this.userBasicService.getUserExamCount(userId));
         userShowInfoVo.setScore(score);
         userShowInfoVo.setLevel((score - score % 100) / 100 + 1);
         userShowInfoVo.setUserNickName(userBasic.getUserNname());

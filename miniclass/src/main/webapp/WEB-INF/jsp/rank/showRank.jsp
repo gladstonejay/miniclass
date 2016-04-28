@@ -18,7 +18,7 @@
 <div class="page-group">
     <div class="page page-current">
         <header class="bar bar-nav">
-            <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab2-active.png" width="28" ></span> 学习排名</h1>
+            <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab/tab2-active.png" width="28" ></span> 学习排名</h1>
         </header>
         <%@ include file="../common/bottom2.jsp" %>
 
@@ -35,7 +35,7 @@
                                     <li class="item-content">
                                         <div class="item-inner">
                                             <c:if test="${xh.count<4}">
-                                                <div class="item-title"><span class="icon" ><img src="../../../static/imags/tab2-${xh.count}.png" width="28" ></span> ${item.userNname}</div>
+                                                <div class="item-title"><span class="icon" ><img src="../../../static/imags/cups/tab2-${xh.count}.png" width="28" ></span> ${item.userNname}</div>
                                                 <div class="item-after">${item.score}</div>
                                             </c:if>
                                             <c:if test="${xh.count>3}">

@@ -50,19 +50,25 @@
             <div class="list-block">
                 <ul>
                     <li class="item-content">
-                        <div class="item-media"><img src="../../../static/imags/tab4-item1.png" width="34"></div>
+                        <div class="item-media"><img src="../../../static/imags/tab/tab4-item1.png" width="34"></div>
                         <div class="item-inner">
                             <div class="item-title">累计上课 : ${userShowInfo.count}次</div>
                         </div>
                     </li>
                     <li class="item-content">
-                        <div class="item-media"><img src="../../../static/imags/tab4-item2.png" width="34"></div>
+                        <div class="item-media"><img src="../../../static/imags/tab/tab4-item1.png" width="34"></div>
+                        <div class="item-inner">
+                            <div class="item-title">累计考试 : ${userShowInfo.examCount}次</div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-media"><img src="../../../static/imags/tab/tab4-item2.png" width="34"></div>
                         <div class="item-inner">
                             <div class="item-title">我的积分 : ${userShowInfo.score}分</div>
                         </div>
                     </li>
                     <li class="item-content">
-                        <div class="item-media"><img src="../../../static/imags/tab4-item3.png" width="34"></div>
+                        <div class="item-media"><img src="../../../static/imags/tab/tab4-item3.png" width="34"></div>
                         <div class="item-inner">
                             <div class="item-title">我的等级 : Level ${userShowInfo.level}</div>
                         </div>
