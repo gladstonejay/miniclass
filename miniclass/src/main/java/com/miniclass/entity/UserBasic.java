@@ -17,6 +17,76 @@ public class UserBasic {
 
     private Date registTime;
 
+    private String province;
+
+    private String city;
+
+    private String county;
+
+    private Integer status;
+
+    private Integer autumn;
+
+    private Integer winter;
+
+    public Integer getAutumn() {
+        return autumn;
+    }
+
+    public void setAutumn(Integer autumn) {
+        this.autumn = autumn;
+    }
+
+    public Integer getWinter() {
+        return winter;
+    }
+
+    public void setWinter(Integer winter) {
+        this.winter = winter;
+    }
+
+    public Integer getSpring() {
+        return spring;
+    }
+
+    public void setSpring(Integer spring) {
+        this.spring = spring;
+    }
+
+    private Integer spring;
+
+    public String getProvince() {
+        return province;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCounty() {
+        return county;
+    }
+
+    public void setCounty(String county) {
+        this.county = county;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     public Integer getId() {
         return id;
     }

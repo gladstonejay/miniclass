@@ -16,6 +16,8 @@ public interface VideoInfoDao {
 
     List<VideoInfo> selectAllVideo();
 
+    List<VideoInfo> selectAllDoneVideo();
+
     int updateByPrimaryKeySelective(VideoInfo record);
 
     int updateByPrimaryKey(VideoInfo record);

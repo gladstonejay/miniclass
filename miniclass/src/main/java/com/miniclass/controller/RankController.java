@@ -32,13 +32,19 @@ public class RankController {
 
         ModelAndView model = new ModelAndView("/rank/showRank");
         List<UserBasic> resultList = null;
+        List<UserBasic> autumnList = null;
+        List<UserBasic> winterList = null;
         try{
             resultList = rankService.getUserRankByScore();
+            autumnList = rankService.getUserRankByScoreAutumn();
+            winterList = rankService.getUserRankByScoreWinter();
         } catch (Exception e){
             log.error(e.getMessage());
         }
 
         model.addObject("resultList", resultList);
+        model.addObject("autumnList", autumnList);
+        model.addObject("winterList", winterList);
         return model;
     }
 }

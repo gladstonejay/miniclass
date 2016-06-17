@@ -95,6 +95,7 @@
                         </div>
                     </li>
                     <li><p span style="color:red;" >${errorId}</p><p span style="color:red;">${errorNname}</p></li>
+                    <li><input type="hidden" name="location" value="${location}"></li>
                 </ul>
             </div>
             <div class="content-block">
@@ -106,6 +107,8 @@
         </div>
     </div>
 </div>
+
+
 <script type="text/javascript">
 
     $(function () {
@@ -128,7 +131,7 @@
                 },
                 descriptions:{
                     required : '<div class="field-invalidmsg">请输入昵称</div>',
-                    pattern : '<div class="field-invalidmsg">请输入6-24位字符：支持中文、英文、数字、“_”</div>',
+                    pattern : '<div class="field-invalidmsg">昵称请输入6-24位字符：支持中文、英文、数字、“_”</div>',
                     valid : '<div class="field-validmsg">正确</div>'
                 }
             },
@@ -138,8 +141,8 @@
                 each:function(){
                 },
                 descriptions:{
-                    required : '<div class="field-invalidmsg">请输入昵称</div>',
-                    pattern : '<div class="field-invalidmsg">请输入6-24位密码：支持英文、数字</div>',
+                    required : '<div class="field-invalidmsg">请输入密码</div>',
+                    pattern : '<div class="field-invalidmsg">密码请输入6-24位密码：支持英文、数字</div>',
                     valid : '<div class="field-validmsg">正确</div>'
                 }
             }

@@ -9,4 +9,6 @@ import java.util.List;
 public interface RankService {
 
     public List<UserBasic> getUserRankByScore();
+    public List<UserBasic> getUserRankByScoreAutumn();
+    public List<UserBasic> getUserRankByScoreWinter();
 }

@@ -18,6 +18,7 @@ import com.miniclass.service.UserBasicService;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -33,7 +34,7 @@ public class UserBasicController {
     private UserBasicService userService;
 
     /**
-     * 课程列表
+     * 本月课程列表
      */
     @RequestMapping(value="/showUserClass")
     public ModelAndView showUserClass(HttpServletRequest request){
@@ -42,9 +43,14 @@ public class UserBasicController {
         List<VideoInfo> videoInfoList = userService.getAllVideo();
         List<VideoInfoVo> videoInfoVos = new ArrayList<VideoInfoVo>();
         VideoInfoVo videoInfoVo = null;
+        for (VideoInfo videoInfo : videoInfoList) {
+            videoInfoVo = new VideoInfoVo(videoInfo);
+            videoInfoVos.add(videoInfoVo);
+        }
         HttpSession session = request.getSession();
         String userId = (String)session.getAttribute("user");
 
+        /*
         if (userId != null) {
             List<UserRecord> userRecords = userService.getUserDoneClassRecord(userId);
             if ( userRecords.size() > 0) {
@@ -54,8 +60,30 @@ public class UserBasicController {
                 }
             }
         }
+        */
+        model.addObject("videoInfoList", videoInfoVos);
 
-        model.addObject("videoInfoList", videoInfoList);
+        return model;
+    }
+
+    /**
+     * 历史课程列表
+     */
+    @RequestMapping(value="/showHistory")
+    public ModelAndView showHistory(HttpServletRequest request){
+
+        ModelAndView model = new ModelAndView("/classLearn/showHistory");
+        List<VideoInfo> videoInfoList = userService.getAllDoneVideo();
+        List<VideoInfoVo> videoInfoVos = new ArrayList<VideoInfoVo>();
+        VideoInfoVo videoInfoVo = null;
+        for (VideoInfo videoInfo : videoInfoList) {
+            videoInfoVo = new VideoInfoVo(videoInfo);
+            videoInfoVos.add(videoInfoVo);
+        }
+        HttpSession session = request.getSession();
+        String userId = (String)session.getAttribute("user");
+
+        model.addObject("videoInfoList", videoInfoVos);
 
         return model;
     }
@@ -73,13 +101,23 @@ public class UserBasicController {
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
         userRecord.setMid(videoId);
-        //type： video, weixin, ppt
+        //type： video, weixin, ppt,exam
         userRecord.setType("video");
         userRecord.setScore(0);
+        Calendar cal = Calendar.getInstance();
+        Integer month = cal.get(Calendar.MONTH) + 1;
+        userRecord.setMonth(month);
         Integer count = this.userService.isRecorded(userRecord);
         if (count == 0){
             this.userService.insertUserRecord(userRecord);
             this.userService.updateUserScore(userId);
+            if(month == 6 || month == 7 ||  month == 8 ||month == 9){
+                this.userService.updateUserScoreAutumn(userId);
+            } else if(month == 10 ||  month == 11 ||month == 12){
+                this.userService.updateUserScoreWinter(userId);
+            }else{
+                this.userService.updateUserScoreSpring(userId);
+            }
         }
         model.addObject("videoInfo",videoInfo);
 

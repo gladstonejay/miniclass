@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -67,6 +68,11 @@ public class ReviewController {
         return model;
     }
 
+    /**
+     * 答疑学习
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "showOneTip", method = RequestMethod.GET)
     public ModelAndView showOneTip(HttpServletRequest request)
     {
@@ -85,18 +91,33 @@ public class ReviewController {
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
         userRecord.setMid(id);
-        //type： video, weixin, ppt
+        //type： video, weixin, ppt,exam
         userRecord.setType("weixin");
         userRecord.setScore(0);
+        Calendar cal = Calendar.getInstance();
+        Integer month = cal.get(Calendar.MONTH) + 1;
+        userRecord.setMonth(month);
         Integer count = this.userService.isRecorded(userRecord);
         if (count == 0){
             this.userService.insertUserRecord(userRecord);
             this.userService.updateUserScore(userId);
+            if(month == 6 || month == 7 ||  month == 8 ||month == 9){
+                this.userService.updateUserScoreAutumn(userId);
+            } else if(month == 10 ||  month == 11 ||month == 12){
+                this.userService.updateUserScoreWinter(userId);
+            }else{
+                this.userService.updateUserScoreSpring(userId);
+            }
         }
 
         return modelAndView;
     }
 
+    /**
+     * 课件学习
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "showOnePPT", method = RequestMethod.GET)
     public ModelAndView showOnePPT(HttpServletRequest request)
     {
@@ -118,15 +139,30 @@ public class ReviewController {
         //type： video, weixin, ppt,exam
         userRecord.setType("ppt");
         userRecord.setScore(0);
+        Calendar cal = Calendar.getInstance();
+        Integer month = cal.get(Calendar.MONTH) + 1;
+        userRecord.setMonth(month);
         Integer count = this.userService.isRecorded(userRecord);
         if (count == 0){
             this.userService.insertUserRecord(userRecord);
             this.userService.updateUserScore(userId);
+            if(month == 6 || month == 7 ||  month == 8 ||month == 9){
+                this.userService.updateUserScoreAutumn(userId);
+            } else if(month == 10 ||  month == 11 ||month == 12){
+                this.userService.updateUserScoreWinter(userId);
+            }else{
+                this.userService.updateUserScoreSpring(userId);
+            }
         }
 
         return modelAndView;
     }
 
+    /**
+     * 展示考试
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "showOneExam", method = RequestMethod.GET)
     public ModelAndView showOneExam(HttpServletRequest request)
     {
@@ -141,6 +177,11 @@ public class ReviewController {
         return modelAndView;
     }
 
+    /**
+     * 处理考试结果
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "examResult", method = RequestMethod.POST)
     public ModelAndView examResult(HttpServletRequest request)
     {
@@ -201,10 +242,20 @@ public class ReviewController {
         //type： video, weixin, ppt,exam
         userRecord.setType("exam");
         userRecord.setScore(score);
+        Calendar cal = Calendar.getInstance();
+        Integer month = cal.get(Calendar.MONTH) + 1;
+        userRecord.setMonth(month);
         Integer count = this.userService.isRecorded(userRecord);
         if (count == 0){
             this.userService.insertUserRecord(userRecord);
             this.userService.updateUserScore(userId);
+            if(month == 6 || month == 7 ||  month == 8 ||month == 9){
+                this.userService.updateUserScoreAutumn(userId);
+            } else if(month == 10 ||  month == 11 ||month == 12){
+                this.userService.updateUserScoreWinter(userId);
+            }else{
+                this.userService.updateUserScoreSpring(userId);
+            }
         }
 
         return modelAndView;

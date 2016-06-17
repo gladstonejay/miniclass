@@ -17,6 +17,16 @@ public class VideoInfo {
 
     private Date timestamp;
 
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    private Integer status;
+
     public Integer getId() {
         return id;
     }

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="miniclass:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="719f1112-8c1c-4e80-bc24-47e695b96a3d" name="Default" comment="" />
     <ignored path="zhiguo.iws" />
@@ -38,62 +43,93 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="RankController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/RankController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58712715" vertical-offset="0" max-vertical-offset="946">
+              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="176">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5786">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/VideoInfoService.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/VideoInfoDao.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/RankService.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/RankController.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserBasic.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/RankServiceImpl.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/head.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/MyService.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/regist.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOneTip.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/QuestionAnswerMapper.xml" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/QuestionAnswerDao.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/static/css/sm.min.css" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/VideoInfoMapper.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showOneClass.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/VideoInfoVo.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom2.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom3.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom4.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserRecord.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showExam.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.min.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOnePPT.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOneExam.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/rank/showRank.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showTips.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showUserClass.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/Exam.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/ReviewService.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/ExamDao.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/ReviewServiceImpl.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/ExamMapper.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/examResult.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/ReviewController.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/UserShowInfoVo.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserRecordDao.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/my.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom2.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom3.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom4.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/../we_services/exchange/exchange-admin/src/main/java/com/we/exchange/admin/service/impl/FileLoadServiceImpl.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.min.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOneExam.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/city.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/static/js/sm.min.js" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/chooseLocation.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/VideoInfo.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserRecord.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/regist.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/VideoInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/VideoInfoDao.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/VideoInfoVo.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showHistory.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showUserClass.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserBasic.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/UserBasicController.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/UserBasicService.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserRecordDao.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserRecordMapper.xml" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/my.jsp" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/UserBasicController.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/ReviewController.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/RankController.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/RankServiceImpl.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/RankService.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/rank/showRank.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java" />
       </list>
     </option>
   </component>
@@ -108,11 +144,6 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="/usr/local/maven" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -169,7 +200,7 @@
     <option name="x" value="1352" />
     <option name="y" value="-186" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -196,6 +227,34 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhiguo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miniclass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhiguo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miniclass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -334,7 +393,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="my" />
+              <option name="myItemId" value="rank" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,26 +418,8 @@
               <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zhiguo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miniclass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,10 +442,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapping" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,10 +468,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="miniclass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -527,6 +560,10 @@
               <option name="myItemId" value="miniclass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -590,34 +627,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhiguo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miniclass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhiguo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miniclass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -630,13 +639,13 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3034483" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sunfrm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="options.lastSelected" value="MavenSettings" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -644,11 +653,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\miniclass\miniclass\src\main\webapp\static\js" />
       <recent name="D:\projects\miniclass\miniclass\src\main\webapp\static\imags" />
       <recent name="D:\projects\miniclass\miniclass\src\main\webapp\static\imags\video" />
       <recent name="D:\projects\miniclass\miniclass\src\main\webapp\static\imags\month" />
       <recent name="D:\projects\miniclass\miniclass\src\main\webapp\static\imags\cups" />
-      <recent name="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\miniclass\miniclass\src\main\webapp\static\imags\tab" />
@@ -936,11 +945,10 @@
       <method />
     </configuration>
     <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.67" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="miniclass:war exploded">
+        <artifact name="miniclass:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -1010,7 +1018,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="miniclass:war exploded" />
+          <artifact name="miniclass:war" />
         </option>
       </method>
     </configuration>
@@ -1091,11 +1099,40 @@
       <workItem from="1461810285211" duration="665000" />
       <workItem from="1461811420334" duration="3123000" />
       <workItem from="1461819654223" duration="5222000" />
+      <workItem from="1462332564271" duration="217000" />
+      <workItem from="1462352340529" duration="680000" />
+      <workItem from="1462361278619" duration="69000" />
+      <workItem from="1462362340621" duration="806000" />
+      <workItem from="1462420841388" duration="766000" />
+      <workItem from="1462459755347" duration="341000" />
+      <workItem from="1462460374118" duration="39000" />
+      <workItem from="1462462488664" duration="32000" />
+      <workItem from="1462704899643" duration="15000" />
+      <workItem from="1462708839370" duration="101000" />
+      <workItem from="1462708978686" duration="203000" />
+      <workItem from="1462710597020" duration="13000" />
+      <workItem from="1462838790966" duration="1221000" />
+      <workItem from="1462840046085" duration="4432000" />
+      <workItem from="1462869975485" duration="9000" />
+      <workItem from="1462958942619" duration="707000" />
+      <workItem from="1463037664101" duration="739000" />
+      <workItem from="1463054915401" duration="60000" />
+      <workItem from="1463459796379" duration="201000" />
+      <workItem from="1463474640623" duration="3063000" />
+      <workItem from="1463551669013" duration="159000" />
+      <workItem from="1463973300583" duration="2870000" />
+      <workItem from="1464000719711" duration="666000" />
+      <workItem from="1464059746327" duration="874000" />
+      <workItem from="1464060662372" duration="796000" />
+      <workItem from="1465957062836" duration="13884000" />
+      <workItem from="1466044147091" duration="8874000" />
+      <workItem from="1466063126291" duration="21108000" />
+      <workItem from="1466152674374" duration="2062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316078000" />
+    <option name="totallyTimeSpent" value="381085000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1118,15 +1155,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1352" y="-186" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="1352" y="-186" width="1936" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3735726" sideWeight="0.4357035" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13893376" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1380597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1141,9 +1178,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32227978" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3069719" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19509594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1154,6 +1191,40 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22590673" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3735726" sideWeight="0.4357035" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1380597" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25181347" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23005182" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22590673" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1182,392 +1253,382 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21890548" vertical-offset="0" max-vertical-offset="603">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5791304" vertical-offset="239" max-vertical-offset="814">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/VideoInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/VideoInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="2882">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showOneClass.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6596685" vertical-offset="41" max-vertical-offset="946">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/UserBasicVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16452992" vertical-offset="0" max-vertical-offset="1430">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/VideoInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92948717" vertical-offset="120" max-vertical-offset="1144">
-          <caret line="73" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/VideoInfoVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8675079" vertical-offset="924" max-vertical-offset="1672">
-          <caret line="95" column="37" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="510">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom3.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="510">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="748">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom4.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48479086" vertical-offset="0" max-vertical-offset="526">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOneTip.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="660">
-          <caret line="9" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.461538" vertical-offset="1240" max-vertical-offset="1965">
-          <caret line="106" column="31" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1255411" vertical-offset="5" max-vertical-offset="690">
-          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.min.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34663865" vertical-offset="0" max-vertical-offset="476">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOnePPT.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.083333" vertical-offset="163" max-vertical-offset="660">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="1672">
-          <caret line="38" column="92" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOneExam.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16414142" vertical-offset="507" max-vertical-offset="2640">
-          <caret line="26" column="81" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="770">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295324" vertical-offset="2722" max-vertical-offset="4818">
-          <caret line="137" column="32" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="32" />
+        <state vertical-scroll-proportion="2.204301" vertical-offset="2628" max-vertical-offset="4818">
+          <caret line="194" column="37" selection-start-line="194" selection-start-column="37" selection-end-line="194" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showOneClass.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.517094" vertical-offset="0" max-vertical-offset="1232">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.6297335" vertical-offset="233" max-vertical-offset="946">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/imags/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/imags/tab/tab1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/imags/tab/tab4-item3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/imags/tab/tab4-item2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/rank/showRank.jsp">
+    <entry file="file://$PROJECT_DIR$/../we_services/exchange/exchange-admin/src/main/java/com/we/exchange/admin/service/impl/FileLoadServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33228347" vertical-offset="603" max-vertical-offset="1408">
-          <caret line="37" column="128" selection-start-line="37" selection-start-column="128" selection-end-line="37" selection-end-column="128" />
-          <folding />
+        <state vertical-scroll-proportion="0.73204905" vertical-offset="9306" max-vertical-offset="12738">
+          <caret line="475" column="12" selection-start-line="475" selection-start-column="12" selection-end-line="475" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom.jsp">
+    <entry file="file://$PROJECT_DIR$/../we_services/exchange/exchange-admin/src/main/java/com/we/exchange/admin/controller/ProjectRunController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12536024" vertical-offset="23" max-vertical-offset="748">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding />
+        <state vertical-scroll-proportion="0.67808217" vertical-offset="3498" max-vertical-offset="4180">
+          <caret line="207" column="78" selection-start-line="207" selection-start-column="78" selection-end-line="207" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/imags/video1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/imags/video2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showTips.jsp">
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44832605" vertical-offset="1782" max-vertical-offset="2816">
-          <caret line="95" column="93" selection-start-line="95" selection-start-column="93" selection-end-line="95" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showUserClass.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80221" vertical-offset="396" max-vertical-offset="2464">
-          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/Exam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1628">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/ReviewServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37606838" vertical-offset="0" max-vertical-offset="990">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/ExamDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49358973" vertical-offset="0" max-vertical-offset="936">
-          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/QuestionAnswerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.517094" vertical-offset="0" max-vertical-offset="936">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/ReviewService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/ExamMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3674">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-          <folding>
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="select from ..exam..." />
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="select * fro..exam..." />
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="select * fro..exam..." />
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="select * fro..exam..." />
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="update exam ..." />
-            <marker date="1461823960402" expanded="true" signature="-1:-1" placeholder="update exam ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/regist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46278316" vertical-offset="198" max-vertical-offset="4730">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1628">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/examResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27714285" vertical-offset="202" max-vertical-offset="902">
+        <state vertical-scroll-proportion="-6.387097" vertical-offset="198" max-vertical-offset="902">
           <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.min.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3723077" vertical-offset="0" max-vertical-offset="650">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOneExam.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1323076" vertical-offset="1990" max-vertical-offset="2640">
+          <caret line="57" column="40" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/js/zepto.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.032934133" vertical-offset="0" max-vertical-offset="668">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/js/sm-extend.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/js/sm-city-picker.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04767064" vertical-offset="0" max-vertical-offset="923">
+          <caret line="7" column="25632" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="27118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/static/js/sm.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="923">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/city.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2674033" vertical-offset="0" max-vertical-offset="905">
+          <caret line="11" column="101" selection-start-line="11" selection-start-column="101" selection-end-line="11" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.354838" vertical-offset="0" max-vertical-offset="506">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/chooseLocation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4227129" vertical-offset="0" max-vertical-offset="1584">
+          <caret line="41" column="109" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2674033" vertical-offset="0" max-vertical-offset="905">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5358166" vertical-offset="0" max-vertical-offset="1232">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/regist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2295918" vertical-offset="3891" max-vertical-offset="4796">
+          <caret line="144" column="63" selection-start-line="144" selection-start-column="63" selection-end-line="144" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/VideoInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60509557" vertical-offset="60" max-vertical-offset="2970">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/VideoInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5123726" vertical-offset="0" max-vertical-offset="687">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="1672">
+          <caret line="20" column="108" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showHistory.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.580645" vertical-offset="1065" max-vertical-offset="2134">
+          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showUserClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6731055" vertical-offset="1945" max-vertical-offset="2618">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/VideoInfoVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5625" vertical-offset="1012" max-vertical-offset="1716">
+          <caret line="93" column="69" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/VideoInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.125" vertical-offset="0" max-vertical-offset="1276">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.7.0_79/src.zip!/javax/naming/spi/NamingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32885906" vertical-offset="6265" max-vertical-offset="18546">
+          <caret line="320" column="0" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.10487445" vertical-offset="291" max-vertical-offset="968">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47239265" vertical-offset="0" max-vertical-offset="1430">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5233161" vertical-offset="709" max-vertical-offset="1760">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7617329" vertical-offset="1272" max-vertical-offset="1826">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="1320">
-          <caret line="41" column="163" selection-start-line="41" selection-start-column="163" selection-end-line="41" selection-end-column="163" />
-          <folding />
+        <state vertical-scroll-proportion="1.1357553" vertical-offset="462" max-vertical-offset="1540">
+          <caret line="48" column="188" selection-start-line="48" selection-start-column="188" selection-end-line="48" selection-end-column="188" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/UserShowInfoVo.java">
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.879617" vertical-offset="347" max-vertical-offset="1166">
-          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserRecordDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63201094" vertical-offset="0" max-vertical-offset="731">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90971273" vertical-offset="1029" max-vertical-offset="1892">
-          <caret line="91" column="58" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/UserBasicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7291382" vertical-offset="149" max-vertical-offset="924">
-          <caret line="36" column="47" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="47" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="759">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserRecordMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.879617" vertical-offset="1733" max-vertical-offset="2552">
-          <caret line="108" column="98" selection-start-line="108" selection-start-column="98" selection-end-line="108" selection-end-column="98" />
-          <folding>
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="select from ..user_record..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="select count..user_record..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="update user_..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="update user_..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="SELECT count..user_record..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user_record..." />
-            <marker date="1461825404734" expanded="true" signature="-1:-1" placeholder="SELECT count..user_record..." />
-          </folding>
+        <state vertical-scroll-proportion="-5.1864405" vertical-offset="486" max-vertical-offset="2574">
+          <caret line="36" column="95" selection-start-line="36" selection-start-column="95" selection-end-line="36" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/UserBasicController.java">
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserRecordDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="530" max-vertical-offset="2068">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.21568628" vertical-offset="0" max-vertical-offset="714">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42307693" vertical-offset="286" max-vertical-offset="2420">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/ReviewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4877505" vertical-offset="3559" max-vertical-offset="4422">
-          <caret line="129" column="40" selection-start-line="129" selection-start-column="29" selection-end-line="129" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="0.81512606" vertical-offset="4654" max-vertical-offset="5522">
+          <caret line="257" column="13" selection-start-line="257" selection-start-column="13" selection-end-line="257" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/my.jsp">
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/UserBasicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47368422" vertical-offset="924" max-vertical-offset="1980">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-          <folding />
+        <state vertical-scroll-proportion="0.44817927" vertical-offset="2166" max-vertical-offset="2904">
+          <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="119" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/RankService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33893558" vertical-offset="0" max-vertical-offset="714">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47619048" vertical-offset="298" max-vertical-offset="1100">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/UserBasicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92436975" vertical-offset="0" max-vertical-offset="1166">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49859944" vertical-offset="986" max-vertical-offset="2420">
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.389831" vertical-offset="2885" max-vertical-offset="3762">
+          <caret line="159" column="50" selection-start-line="159" selection-start-column="50" selection-end-line="159" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showTips.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58064514" vertical-offset="678" max-vertical-offset="2816">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/RankServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5147783" vertical-offset="0" max-vertical-offset="812">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/rank/showRank.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.0182927" vertical-offset="0" max-vertical-offset="2332">
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6971047" vertical-offset="897" max-vertical-offset="4774">
-          <caret line="89" column="35" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5786">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="932">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/RankController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58712715" vertical-offset="0" max-vertical-offset="946">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding />
         </state>
       </provider>

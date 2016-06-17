@@ -47,9 +47,18 @@ public class UserBasicServiceImpl implements UserBasicService{
 
         return this.userDao.selectUserPassword(password);
     }
+    public int useBlackList(String userId){
+
+        return this.userDao.selectUseBlackList(userId);
+    }
     public List<VideoInfo> getAllVideo(){
 
         return this.videoInfoDao.selectAllVideo();
+    }
+
+    public List<VideoInfo> getAllDoneVideo(){
+
+        return this.videoInfoDao.selectAllDoneVideo();
     }
 
     public VideoInfo getVideoById(int videoId)
@@ -65,6 +74,21 @@ public class UserBasicServiceImpl implements UserBasicService{
     public int updateUserScore(String userId){
 
         return this.userDao.updateUserScore(userId);
+    }
+
+    public int updateUserScoreAutumn(String userId){
+
+        return this.userDao.updateUserScoreAutumn(userId);
+    }
+
+    public int updateUserScoreWinter(String userId){
+
+        return this.userDao.updateUserScoreWinter(userId);
+    }
+
+    public int updateUserScoreSpring(String userId){
+
+        return this.userDao.updateUserScoreSpring(userId);
     }
 
     public int isRecorded(UserRecord userRecord){

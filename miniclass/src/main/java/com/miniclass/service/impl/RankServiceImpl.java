@@ -21,8 +21,17 @@ public class RankServiceImpl implements RankService{
 
     public List<UserBasic> getUserRankByScore()
     {
-        System.out.println("I'm here");
         return this.userBasicDao.getUserRankByScore();
+    }
+
+    public List<UserBasic> getUserRankByScoreAutumn()
+    {
+        return this.userBasicDao.getUserRankByScoreAutumn();
+    }
+
+    public List<UserBasic> getUserRankByScoreWinter()
+    {
+        return this.userBasicDao.getUserRankByScoreWinter();
     }
 
 }

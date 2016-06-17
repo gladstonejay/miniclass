@@ -20,7 +20,11 @@ public interface UserBasicService {
 
     public int userPasswordExist(String password);
 
+    public int useBlackList(String userName);
+
     public List<VideoInfo> getAllVideo();
+
+    public List<VideoInfo> getAllDoneVideo();
 
     public List<UserRecord> getUserDoneClassRecord(String userId);
 
@@ -28,7 +32,14 @@ public interface UserBasicService {
 
     public int isRecorded(UserRecord userRecord);
 
+    //用户积分更新操作
     public int updateUserScore(String userId);
+
+    public int updateUserScoreAutumn(String userId);
+
+    public int updateUserScoreWinter(String userId);
+
+    public int updateUserScoreSpring(String userId);
 
     public int insertUserRecord(UserRecord userRecord);
 

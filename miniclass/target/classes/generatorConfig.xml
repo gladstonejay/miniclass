@@ -18,9 +18,9 @@
         <!--password="${jdbc.password}">-->
         <!--</jdbcConnection>-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1/miniclass?characterEncoding=UTF-8"
+                        connectionURL="jdbc:mysql://172.16.3.133:3306/exchange?characterEncoding=UTF-8"
                         userId="root"
-                        password="root">
+                        password="yZT0b6m32UDg">
         </jdbcConnection>
 
         <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
@@ -51,8 +51,8 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <table tableName="exam"
-               domainObjectName="Exam"
+        <table tableName="operate_log"
+               domainObjectName="OperateLog"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"

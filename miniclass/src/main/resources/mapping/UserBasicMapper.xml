@@ -9,9 +9,17 @@
     <result column="password" property="password" jdbcType="VARCHAR" />
       <result column="score" property="score" jdbcType="INTEGER" />
       <result column="regist_time" property="registTime" jdbcType="TIMESTAMP" />
+      <result column="province" property="province" jdbcType="VARCHAR" />
+      <result column="city" property="city" jdbcType="VARCHAR" />
+      <result column="county" property="county" jdbcType="VARCHAR" />
+      <result column="status" property="status" jdbcType="INTEGER" />
+      <result column="autumn" property="autumn" jdbcType="INTEGER" />
+      <result column="winter" property="winter" jdbcType="INTEGER" />
+      <result column="spring" property="spring" jdbcType="INTEGER" />
+
   </resultMap>
   <sql id="Base_Column_List" >
-    Id, user_id, user_nname, user_type, password, regist_time
+    Id, user_id, user_nname, user_type, password, regist_time , province , city , county , status ,autumn , winter , spring
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -24,12 +32,22 @@
     where Id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.miniclass.entity.UserBasic" >
-    insert into user_basic (Id, user_id, user_nname, 
-      user_type, password,score, regist_time
-      )
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userNname,jdbcType=VARCHAR}, 
-      #{userType,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},#{score,jdbcType=INTEGER}, #{registTime,jdbcType=TIMESTAMP}
-      )
+    insert into user_basic
+      <trim prefix="(" suffix=")" suffixOverrides="," >
+      Id, user_id, user_nname,
+      user_type, password,score, regist_time,province,city,
+      <if test="county != null" >
+          county,
+      </if>
+      </trim>
+      <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{id,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userNname,jdbcType=VARCHAR},
+      #{userType,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},#{score,jdbcType=INTEGER}, #{registTime,jdbcType=TIMESTAMP},
+      #{province,jdbcType=VARCHAR},#{city,jdbcType=VARCHAR},
+      <if test="county != null" >
+          #{county,jdbcType=VARCHAR},
+      </if>
+      </trim>
   </insert>
   <insert id="insertSelective" parameterType="com.miniclass.entity.UserBasic" >
     insert into user_basic
@@ -107,6 +125,19 @@
     <update id="updateUserScore" parameterType="com.miniclass.entity.UserBasic" >
         update user_basic set score = score+10 where user_id = #{userId,jdbcType=INTEGER}
     </update>
+
+    <update id="updateUserScoreAutumn" parameterType="com.miniclass.entity.UserBasic" >
+        update user_basic set autumn = autumn+10 where user_id = #{userId,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateUserScoreWinter" parameterType="com.miniclass.entity.UserBasic" >
+        update user_basic set winter = winter+10 where user_id = #{userId,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateUserScoreSpring" parameterType="com.miniclass.entity.UserBasic" >
+        update user_basic set spring = spring+10 where user_id = #{userId,jdbcType=INTEGER}
+    </update>
+
     <select id="selectUserId" resultType = "int" parameterType="java.lang.String">
         select count(*) from user_basic where user_id = #{userId,jdbcType=VARCHAR};
     </select>
@@ -116,8 +147,17 @@
     <select id="selectUserPassword" resultType ="int" parameterType="java.lang.String" >
         select count(*) from user_basic where password = #{password,jdbcType=VARCHAR}
     </select>
+    <select id="selectUseBlackList" resultType="int" parameterType="java.lang.String" >
+        SELECT status from user_basic where user_id = #{userId,jdbcType=VARCHAR}
+    </select>
     <select id="getUserRankByScore" resultMap="BaseResultMap">
         SELECT * FROM user_basic ORDER  BY  score DESC limit 10;
+    </select>
+    <select id="getUserRankByScoreAutumn" resultMap="BaseResultMap">
+        SELECT * FROM user_basic ORDER  BY  autumn DESC limit 10;
+    </select>
+    <select id="getUserRankByScoreWinter" resultMap="BaseResultMap">
+        SELECT * FROM user_basic ORDER  BY  winter DESC limit 10;
     </select>
     <select id="getUserById" resultMap="BaseResultMap" parameterType="java.lang.String">
         SELECT * FROM user_basic where user_id = #{userId,jdbcType=VARCHAR};

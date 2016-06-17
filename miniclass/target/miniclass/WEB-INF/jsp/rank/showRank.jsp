@@ -24,11 +24,53 @@
 
         <div class="content">
             <div class="buttons-tab">
-                <a href="#tab1" class="tab-link active button">前十达人</a>
+                <a href="#tab1" class="tab-link active button">第三季度前十达人</a>
+                <a href="#tab2" class="tab-link  button">第四季度前十达人</a>
+                <a href="#tab3" class="tab-link  button">年度前十达人</a>
             </div>
             <h6>积分获取规则：每次听课，考试，阅读文章都可以获得相应的分数；每天只能获取同一内容的积分一次</h6>
                 <div class="tabs">
                     <div id="tab1" class="tab active">
+                        <div class="list-block">
+                            <ul>
+                                <c:forEach items="${autumnList}" var="item" varStatus="xh">
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <c:if test="${xh.count<4}">
+                                                <div class="item-title"><span class="icon" ><img src="../../../static/imags/cups/tab2-${xh.count}.png" width="28" ></span> ${item.userNname}</div>
+                                                <div class="item-after">${item.autumn}</div>
+                                            </c:if>
+                                            <c:if test="${xh.count>3}">
+                                                <div class="item-title"> ${xh.count} ${item.userNname}</div>
+                                                <div class="item-after">${item.autumn}</div>
+                                            </c:if>
+                                        </div>
+                                    </li>
+                                </c:forEach>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <div class="list-block">
+                            <ul>
+                                <c:forEach items="${winterList}" var="item" varStatus="xh">
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <c:if test="${xh.count<4}">
+                                                <div class="item-title"><span class="icon" ><img src="../../../static/imags/cups/tab2-${xh.count}.png" width="28" ></span> ${item.userNname}</div>
+                                                <div class="item-after">${item.winter}</div>
+                                            </c:if>
+                                            <c:if test="${xh.count>3}">
+                                                <div class="item-title"> ${xh.count} ${item.userNname}</div>
+                                                <div class="item-after">${item.winter}</div>
+                                            </c:if>
+                                        </div>
+                                    </li>
+                                </c:forEach>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab">
                         <div class="list-block">
                             <ul>
                                 <c:forEach items="${resultList}" var="item" varStatus="xh">

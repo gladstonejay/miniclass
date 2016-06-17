@@ -9,13 +9,17 @@
     <result column="type" property="type" jdbcType="VARCHAR" />
     <result column="summary" property="summary" jdbcType="VARCHAR" />
     <result column="timestamp" property="timestamp" jdbcType="TIMESTAMP" />
+      <result column="status" property="status" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
-    Id, order_id, title, video_id, type, summary, timestamp
+    Id, order_id, title, video_id, type, summary, timestamp, status
   </sql>
   <select id="selectAllVideo" resultMap="BaseResultMap"  >
-    select * from video_info order by order_id ASC;
+    select * from video_info where status=0 order by order_id ASC;
   </select>
+    <select id="selectAllDoneVideo" resultMap="BaseResultMap"  >
+        select * from video_info where status=1 order by order_id ASC;
+    </select>
   <select id="getVideoById" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select
     <include refid="Base_Column_List" />

@@ -18,7 +18,7 @@
 <div class="page-group">
     <div class="page page-current">
         <header class="bar bar-nav" >
-            <button class="button button-link button-nav pull-right"><a href="/my/regist.j" external style="color:#FFFFFF">
+            <button class="button button-link button-nav pull-right"><a href="/my/chooseLocation.j" external style="color:#FFFFFF">
                 注册
             </a><span class="icon icon-right"></span>
             </button>

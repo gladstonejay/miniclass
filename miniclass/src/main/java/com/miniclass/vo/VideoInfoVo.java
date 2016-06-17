@@ -2,6 +2,7 @@ package com.miniclass.vo;
 
 import com.miniclass.entity.VideoInfo;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -22,7 +23,7 @@ public class VideoInfoVo  extends Vo  {
 
     private String summary;
 
-    private Date timestamp;
+    private String timestamp;
 
     private Integer userDone;
 
@@ -78,11 +79,11 @@ public class VideoInfoVo  extends Vo  {
         this.summary = summary == null ? null : summary.trim();
     }
 
-    public Date getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(Date timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 
@@ -90,7 +91,9 @@ public class VideoInfoVo  extends Vo  {
         this.setId(info.getId());
         this.setOrderId(info.getOrderId());
         this.setSummary(info.getSummary());
-        this.setTimestamp(info.getTimestamp());
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");
+        String dateString = format.format(info.getTimestamp());
+        this.setTimestamp(dateString);
         this.setTitle(info.getTitle());
         this.setVideoId(info.getVideoId());
         this.setType(info.getType());

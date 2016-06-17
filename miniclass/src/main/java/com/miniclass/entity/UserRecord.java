@@ -15,6 +15,16 @@ public class UserRecord {
 
     private Date date;
 
+    public Integer getMonth() {
+        return month;
+    }
+
+    public void setMonth(Integer month) {
+        this.month = month;
+    }
+
+    private Integer month;
+
     public Integer getId() {
         return id;
     }

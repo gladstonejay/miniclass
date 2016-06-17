@@ -58,10 +58,10 @@
 
             <c:forEach items="${videoInfoList}" var="item" varStatus="xh">
                 <c:if test="${item.orderId=='1'}">
-                <p style="text-align: center"><img src="../../../static/imags/month/5.0.png"  width="163" ></p>
+                <p style="text-align: center"><img src="../../../static/imags/month/6.0.png"  width="163" ></p>
                 </c:if>
                 <c:if test="${item.orderId=='3' || item.orderId=='7' || item.orderId=='11' ||item.orderId=='15' ||item.orderId=='19' ||item.orderId=='23' ||item.orderId=='27'}">
-                <p style="text-align: center"><img src="../../../static/imags/month/${((item.orderId-3)/4+6)}.png"  width="163" ></p>
+                <p style="text-align: center"><img src="../../../static/imags/month/${((item.orderId-3)/4+7)}.png"  width="163" ></p>
                 </c:if>
             <div class="card">
                 <div class="card-content">
@@ -97,6 +97,13 @@
                 </div>
             </div>
             </c:forEach>
+            <div class="content-block">
+                <div class="row">
+                    <div class="col-100">
+                        <a href="/classLearn/showHistory.j" external class="button button-big button-fill button-success">查看历史课程</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

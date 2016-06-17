@@ -13,6 +13,9 @@ import javax.servlet.http.Cookie;
 
 
 import com.alibaba.fastjson.JSON;
+import com.sun.javafx.sg.PGShape;
+import com.sun.media.sound.ModelDestination;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,7 +49,7 @@ import com.miniclass.vo.UserShowInfoVo;
 public class MyController extends KaptchaExtend {
 
     private static final String CURRENT_USER = "user";
-    private static final int LastTime = 60*10;
+    private static final int LastTime = 60*60*24*200;
     private static Logger log = LoggerFactory.getLogger(MyController.class);
     @Resource
     private UserBasicService userBasicService;
@@ -71,6 +74,17 @@ public class MyController extends KaptchaExtend {
         ModelAndView model = new ModelAndView("/my/regist");
 
         return model;
+    }
+
+    /**
+     * 选择区域界面
+     */
+    @RequestMapping(value = "/chooseLocation")
+    public ModelAndView location(){
+
+        ModelAndView modelAndView = new ModelAndView("/my/chooseLocation");
+
+        return modelAndView;
     }
 
     /**
@@ -147,7 +161,11 @@ public class MyController extends KaptchaExtend {
         if (b == 0 ){
             errorModel.addObject("errorNname","密码不正确");
         }
-        if ( (a == 0) || (b==0) ){
+        Integer c = userBasicService.useBlackList(userId);
+        if (c == 1){
+            errorModel.addObject("errorId","该账户已被列入黑名单，如需帮助，请联系管理员");
+        }
+        if ( (a == 0) || (b==0) || (c==1)){
             return errorModel;
         }
         else{
@@ -163,6 +181,27 @@ public class MyController extends KaptchaExtend {
 
     }
 
+    /**
+     * 选择区域验证
+     */
+    @RequestMapping(value = "/locationCheck")
+    public ModelAndView locationCheck(HttpServletRequest request){
+
+        String location = request.getParameter("location");
+        ModelAndView error = new ModelAndView("/my/chooseLocation");
+        ModelAndView regist = new ModelAndView("/my/regist");
+
+        if (location.equals(null) || location.length() == 0) {
+            error.addObject("errorNname"," 请选择区域");
+
+            return error;
+        }
+        else{
+            regist.addObject("location",location);
+            return regist;
+        }
+    }
+
 
     /**
      * 注册验证及插入数据
@@ -171,6 +210,11 @@ public class MyController extends KaptchaExtend {
     public ModelAndView registerPost( UserBasicVo ubVo , HttpServletRequest request, HttpServletResponse response){
 
         ModelAndView errorModel = new ModelAndView("my/regist");
+
+        String loca= request.getParameter("location");
+        log.info("location is " + loca);
+        String[] location = loca.split(" ");
+        log.info("location lenth is " + location.length);
 
         Integer a = userBasicService.userIdExist(ubVo.getUserId());
         if (a == 1){
@@ -197,6 +241,11 @@ public class MyController extends KaptchaExtend {
             userBasic.setPassword(newstr);
             userBasic.setUserType("n");
             userBasic.setScore(0);
+            userBasic.setProvince(location[0]);
+            userBasic.setCity(location[1]);
+            if(location.length==3){
+                userBasic.setCounty(location[2]);
+            }
             userBasicService.insertNewUser(userBasic);
 
             /*

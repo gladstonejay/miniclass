@@ -1,13 +1,16 @@
 package com.miniclass.controller;
 
-import com.miniclass.entity.UserBasic;
+import com.miniclass.service.UserBasicService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ResourceBundle;
 
 /**
  * 登录过滤器
@@ -15,6 +18,7 @@ import java.util.ResourceBundle;
  */
 public class LoginFilter extends BaseController implements Filter{
 
+    private static Logger log = LoggerFactory.getLogger(LoginFilter.class);
     public LoginFilter(){
     }
 
@@ -35,16 +39,15 @@ public class LoginFilter extends BaseController implements Filter{
         // 获得session中的对象
         String userId = new String();
         HttpSession session = req.getSession();
-        if (null != session)
-            //user = (UserBasic) session.getAttribute("user");
+        if (null != session){
             userId = (String)session.getAttribute("user");
-        // url特殊处理：放行url
-        if ( (url.contains("showOneClass.j") || url.endsWith("my.j") || url.contains("showOneTip.j") || url.contains("showOnePPT.j") || url.contains("showOneExam.j") ) &&  null == userId ){
-        //if ( url.endsWith("my.j")  &&  null == user ){
+        }
+        Integer status = 0;
 
-            //不满足条件就跳转到其他页面
-            //String withdrawUrl = ResourceBundle.getBundle("config").getString("projectUrl");
-            //res.sendRedirect(withdrawUrl);
+
+        // url特殊处理：不放行url
+        if ( (url.contains("showOneClass.j") || url.endsWith("my.j") || url.contains("showOneTip.j") || url.contains("showOnePPT.j") || url.contains("showOneExam.j")) &&  (null == userId) ){
+
             res.sendRedirect("/my/login.j");
         }
         else {
