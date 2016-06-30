@@ -18,15 +18,15 @@
 <div class="page-group">
     <div class="page page-current">
         <header class="bar bar-nav">
-            <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab/tab2-active.png" width="28" ></span> 学习排名</h1>
+            <h1 class='title'><span class="icon" ><img src="../../../static/imags/tab/tab2-active.png" width="28" ></span> 学习排名 前十达人</h1>
         </header>
         <%@ include file="../common/bottom2.jsp" %>
 
         <div class="content">
             <div class="buttons-tab">
-                <a href="#tab1" class="tab-link active button">第三季度前十达人</a>
-                <a href="#tab2" class="tab-link  button">第四季度前十达人</a>
-                <a href="#tab3" class="tab-link  button">年度前十达人</a>
+                <a href="#tab1" class="tab-link active button">第三季度</a>
+                <a href="#tab2" class="tab-link  button">第四季度</a>
+                <a href="#tab3" class="tab-link  button">年度</a>
             </div>
             <h6>积分获取规则：每次听课，考试，阅读文章都可以获得相应的分数；每天只能获取同一内容的积分一次</h6>
                 <div class="tabs">
