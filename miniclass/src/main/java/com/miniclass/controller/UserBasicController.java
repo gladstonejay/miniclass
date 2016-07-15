@@ -1,6 +1,7 @@
 package com.miniclass.controller;
 
 import javax.annotation.Resource;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -30,6 +31,7 @@ import java.util.List;
 public class UserBasicController {
 
     private static Logger log = LoggerFactory.getLogger(UserBasicController.class);
+    private static final String CURRENT_USER = "ssr_user";
     @Resource
     private UserBasicService userService;
 
@@ -47,20 +49,7 @@ public class UserBasicController {
             videoInfoVo = new VideoInfoVo(videoInfo);
             videoInfoVos.add(videoInfoVo);
         }
-        HttpSession session = request.getSession();
-        String userId = (String)session.getAttribute("user");
 
-        /*
-        if (userId != null) {
-            List<UserRecord> userRecords = userService.getUserDoneClassRecord(userId);
-            if ( userRecords.size() > 0) {
-                for (VideoInfo videoInfo : videoInfoList) {
-                    videoInfoVo = new VideoInfoVo(videoInfo);
-                    videoInfoVos.add(videoInfoVo);
-                }
-            }
-        }
-        */
         model.addObject("videoInfoList", videoInfoVos);
 
         return model;
@@ -80,8 +69,6 @@ public class UserBasicController {
             videoInfoVo = new VideoInfoVo(videoInfo);
             videoInfoVos.add(videoInfoVo);
         }
-        HttpSession session = request.getSession();
-        String userId = (String)session.getAttribute("user");
 
         model.addObject("videoInfoList", videoInfoVos);
 
@@ -94,9 +81,11 @@ public class UserBasicController {
         ModelAndView model = new ModelAndView("/classLearn/showOneClass");
         int videoId = Integer.parseInt(request.getParameter("id"));
         VideoInfo videoInfo = this.userService.getVideoById(videoId);
+
         HttpSession session = request.getSession();
         String userId = new String();
-        userId = (String)session.getAttribute("user");
+        userId = (String)session.getAttribute(CURRENT_USER);
+        //String userId = this.GetUserIdByCookie(request);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -123,4 +112,26 @@ public class UserBasicController {
 
         return model;
     }
+
+    /**
+     * 从cookie中获取用户名
+     * @param request
+     * @return
+     */
+    public String GetUserIdByCookie(HttpServletRequest request){
+
+
+        log.info("------------课程页面");
+        String userId = new String();
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if (CURRENT_USER.equals(cookie.getName())) {
+                userId = cookie.getValue();
+            }
+        }
+        log.info("------------课程页面用户" + userId);
+
+        return userId;
+    }
+
 }

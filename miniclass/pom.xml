@@ -12,7 +12,7 @@
         <!-- spring版本号 -->
         <spring.version>4.0.2.RELEASE</spring.version>
         <!-- mybatis版本号 -->
-        <mybatis.version>3.2.6</mybatis.version>
+        <mybatis.version>3.3.0</mybatis.version>
         <!-- log4j日志文件管理包版本 -->
         <slf4j.version>1.7.7</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
@@ -94,7 +94,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
-            <version>1.2.2</version>
+            <version>1.2.3</version>
         </dependency>
 
         <!-- 导入java ee jar 包 -->

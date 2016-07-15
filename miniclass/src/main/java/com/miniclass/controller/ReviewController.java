@@ -1,7 +1,7 @@
 package com.miniclass.controller;
 
 import javax.annotation.Resource;
-import javax.enterprise.inject.Model;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -30,6 +30,7 @@ import java.util.List;
 public class ReviewController {
 
     private static Logger log = LoggerFactory.getLogger(ReviewController.class);
+    private static final String CURRENT_USER = "ssr_user";
     @Resource
     private ReviewService reviewService;
     @Resource
@@ -86,7 +87,8 @@ public class ReviewController {
 
         HttpSession session = request.getSession();
         String userId = new String();
-        userId = (String)session.getAttribute("user");
+        userId = (String)session.getAttribute(CURRENT_USER);
+        //String userId = this.GetUserIdByCookie(request);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -131,7 +133,8 @@ public class ReviewController {
 
         HttpSession session = request.getSession();
         String userId = new String();
-        userId = (String)session.getAttribute("user");
+        userId = (String)session.getAttribute(CURRENT_USER);
+        //String userId = this.GetUserIdByCookie(request);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -234,7 +237,8 @@ public class ReviewController {
 
         HttpSession session = request.getSession();
         String userId = new String();
-        userId = (String)session.getAttribute("user");
+        userId = (String)session.getAttribute(CURRENT_USER);
+        //String userId = this.GetUserIdByCookie(request);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -259,6 +263,27 @@ public class ReviewController {
         }
 
         return modelAndView;
+    }
+
+    /**
+     * 从cookie中获取用户名
+     * @param request
+     * @return
+     */
+    public String GetUserIdByCookie(HttpServletRequest request){
+
+
+        log.info("------------登录");
+        String userId = new String();
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if (CURRENT_USER.equals(cookie.getName())) {
+                userId = cookie.getValue();
+            }
+        }
+        log.info("------------用户登录成功" + userId);
+
+        return userId;
     }
 
 }

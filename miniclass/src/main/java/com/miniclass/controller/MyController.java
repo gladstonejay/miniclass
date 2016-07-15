@@ -8,31 +8,16 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import javax.servlet.http.Cookie;
 
-
-import com.alibaba.fastjson.JSON;
-import com.sun.javafx.sg.PGShape;
-import com.sun.media.sound.ModelDestination;
-import com.sun.org.apache.xpath.internal.operations.Mod;
-import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import com.google.code.kaptcha.servlet.KaptchaExtend;
-
 
 import com.miniclass.vo.UserBasicVo;
 import com.miniclass.entity.UserBasic;
@@ -48,8 +33,8 @@ import com.miniclass.vo.UserShowInfoVo;
 @RequestMapping("/my")
 public class MyController extends KaptchaExtend {
 
-    private static final String CURRENT_USER = "user";
-    private static final int LastTime = 60*60*24*200;
+    private static final String CURRENT_USER = "ssr_user";
+    private static final int LastTime = 60 * 60 * 24 * 200;
     private static Logger log = LoggerFactory.getLogger(MyController.class);
     @Resource
     private UserBasicService userBasicService;
@@ -94,14 +79,21 @@ public class MyController extends KaptchaExtend {
     public ModelAndView my(HttpServletRequest request)  {
 
         ModelAndView model = new ModelAndView("/my/my");
-        HttpSession session = request.getSession();
-        String userId = (String)session.getAttribute("user");
+        String userId = this.GetUserIdByCookie(request);
         UserBasic userBasic = null;
-        userBasic = this.userBasicService.getUserById(userId);
+        try{
+            userBasic = this.userBasicService.getUserById(userId);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         UserShowInfoVo userShowInfoVo = new UserShowInfoVo();
         Integer score = userBasic.getScore();
-        userShowInfoVo.setCount( this.userBasicService.getUserRecordCount(userId));
-        userShowInfoVo.setExamCount( this.userBasicService.getUserExamCount(userId));
+        try {
+            userShowInfoVo.setCount(this.userBasicService.getUserRecordCount(userId));
+            userShowInfoVo.setExamCount(this.userBasicService.getUserExamCount(userId));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         userShowInfoVo.setScore(score);
         userShowInfoVo.setLevel((score - score % 100) / 100 + 1);
         userShowInfoVo.setUserNickName(userBasic.getUserNname());
@@ -130,7 +122,7 @@ public class MyController extends KaptchaExtend {
         if (code.equals(getGeneratedKey(req))) {
             a=0;
         }
-        Map<String, Integer> map = new HashMap<String,Integer>(1);
+        Map<String, Integer> map = new HashMap<>(1);
         map.put("success",a);
 
         return map;
@@ -140,14 +132,18 @@ public class MyController extends KaptchaExtend {
      * 登录验证
      */
     @RequestMapping(value = "/loginCheck", method = RequestMethod.POST)
-    public ModelAndView loginPost( HttpServletRequest request){
+    public ModelAndView loginPost( HttpServletRequest request ,HttpServletResponse response){
 
         ModelAndView errorModel = new ModelAndView("my/login");
 
         String userId = request.getParameter("userId");
         String password = request.getParameter("password");
-
-        Integer a = userBasicService.userIdExist(userId);
+        Integer a = new Integer(0);
+        try {
+            a = userBasicService.userIdExist(userId);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         if (a == 0){
             errorModel.addObject("errorId","电话号码不存在");
         }
@@ -172,13 +168,10 @@ public class MyController extends KaptchaExtend {
 
             UserBasic userBasic = new UserBasic();
             userBasic.setUserId(userId);
-            HttpSession session = request.getSession();
-            session.setAttribute(CURRENT_USER, userBasic.getUserId());
-            session.setMaxInactiveInterval( LastTime );
+            this.CookieSave(userBasic,response,request);
 
             return new ModelAndView("redirect:/my/my.j");
         }
-
     }
 
     /**
@@ -246,22 +239,15 @@ public class MyController extends KaptchaExtend {
             if(location.length==3){
                 userBasic.setCounty(location[2]);
             }
-            userBasicService.insertNewUser(userBasic);
-
-            /*
-            Cookie cookie = new Cookie("userId", ubVo.getUserId());
-            cookie.setMaxAge(LastTime);
-            response.addCookie(cookie);
-            log.info("cookie is "+ cookie );
-            */
-
-            HttpSession session = request.getSession();
-            session.setAttribute(CURRENT_USER, userBasic.getUserId());
-            session.setMaxInactiveInterval(LastTime);
+            try {
+                userBasicService.insertNewUser(userBasic);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            this.CookieSave(userBasic,response,request);
 
             return new ModelAndView("redirect:/my/my.j");
         }
-
     }
 
     /**
@@ -288,6 +274,37 @@ public class MyController extends KaptchaExtend {
             hexValue.append(Integer.toHexString(val));
         }
         return hexValue.toString();
+    }
+
+    public void CookieSave(UserBasic userBasic , HttpServletResponse response , HttpServletRequest request){
+
+        Cookie cookie = new Cookie( CURRENT_USER , userBasic.getUserId() );
+        cookie.setMaxAge( LastTime );
+        //设置路径
+        cookie.setPath(request.getContextPath());
+        response.addCookie(cookie);
+        log.info(" ---------------登录时cookies is " + cookie.toString());
+    }
+
+    /**
+     * 从cookie中获取用户名
+     * @param request
+     * @return
+     */
+    public String GetUserIdByCookie(HttpServletRequest request){
+
+
+        log.info("------------登录");
+        String userId = new String();
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if (CURRENT_USER.equals(cookie.getName())) {
+                userId = cookie.getValue();
+            }
+        }
+        log.info("------------用户登录成功" + userId);
+
+        return userId;
     }
 }
 
