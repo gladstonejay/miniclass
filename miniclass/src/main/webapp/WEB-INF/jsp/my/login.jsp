@@ -36,7 +36,7 @@
                             <div class="item-inner">
                                 <div class="item-title label">电话</div>
                                 <div class="item-input">
-                                    <input type="text" placeholder="请输入电话号码" id="userId" name="userId" value="userId">
+                                    <input type="text" placeholder="请输入电话号码" id="userId" name="userId" value=${userId}>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +47,7 @@
                             <div class="item-inner">
                                 <div class="item-title label">密码</div>
                                 <div class="item-input">
-                                    <input type="password" placeholder="请输入密码" id="password" name="password" value="ubVo.password">
+                                    <input type="password" placeholder="请输入密码" id="password" name="password" value=${ubVo.password}>
                                 </div>
                             </div>
                         </div>

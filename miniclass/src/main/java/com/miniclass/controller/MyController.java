@@ -5,12 +5,14 @@ import java.security.MessageDigest;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Resource;
+import javax.enterprise.inject.Model;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpSession;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -264,6 +266,25 @@ public class MyController extends KaptchaExtend {
     }
 
     /**
+     * 用户退出登录
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping(value = "/loginOut")
+    public ModelAndView loginOut( HttpServletRequest request, HttpServletResponse response) {
+
+        ModelAndView modelAndView = new ModelAndView("my/loginOut");
+        Cookie cookie = new Cookie(CURRENT_USER, null);
+        cookie.setMaxAge(0);
+        cookie.setPath(request.getContextPath());
+        response.addCookie(cookie);
+
+        return modelAndView;
+    }
+
+
+    /**
      * MD5 生成函数
      */
     public static String md5Encode(String inStr) throws Exception {
@@ -289,6 +310,12 @@ public class MyController extends KaptchaExtend {
         return hexValue.toString();
     }
 
+    /**
+     * cookie保存
+     * @param userBasic
+     * @param response
+     * @param request
+     */
     public void CookieSave(UserBasic userBasic , HttpServletResponse response , HttpServletRequest request){
 
         Cookie cookie = new Cookie( CURRENT_USER , userBasic.getUserId() );

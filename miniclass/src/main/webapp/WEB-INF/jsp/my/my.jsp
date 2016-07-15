@@ -18,6 +18,10 @@
 <div class="page-group">
     <div class="page page-current">
         <header class="bar bar-nav">
+            <button class="button button-link button-nav pull-right"><a href="/my/loginOut.j" external style="color:#FFFFFF">
+                注销
+            </a><span class="icon icon-right"></span>
+            </button>
             <h1 class='title'>我的微课堂</h1>
         </header>
         <%@ include file="../common/bottom4.jsp" %>

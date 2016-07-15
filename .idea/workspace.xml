@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53511703" vertical-offset="846" max-vertical-offset="1650">
+            <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1650">
               <caret line="53" column="166" selection-start-line="53" selection-start-column="166" selection-end-line="53" selection-end-column="166" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,14 +80,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3385" max-vertical-offset="7260">
-              <caret line="165" column="18" selection-start-line="165" selection-start-column="18" selection-end-line="165" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6134185" vertical-offset="5512" max-vertical-offset="7854">
+              <caret line="268" column="13" selection-start-line="268" selection-start-column="13" selection-end-line="268" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/my.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.0" vertical-offset="0" max-vertical-offset="2068">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showOnePPT.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/showTips.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/Exam.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/ReviewService.java" />
@@ -117,7 +126,6 @@
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/review/examResult.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/vo/UserShowInfoVo.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserRecordDao.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/my.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom2.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom3.jsp" />
@@ -129,7 +137,6 @@
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/city.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/cmnjs.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/static/js/sm.min.js" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/chooseLocation.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/VideoInfo.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserRecord.java" />
@@ -157,6 +164,9 @@
         <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/my.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/loginOut.jsp" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java" />
       </list>
     </option>
@@ -406,41 +416,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="review" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zhiguo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miniclass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rank" />
+              <option name="myItemId" value="my" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1207,12 +1183,12 @@
       <workItem from="1467342534171" duration="711000" />
       <workItem from="1467625821723" duration="3160000" />
       <workItem from="1467699308926" duration="359000" />
-      <workItem from="1468550766215" duration="12895000" />
+      <workItem from="1468550766215" duration="13981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="402993000" />
+    <option name="totallyTimeSpent" value="404079000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1258,9 +1234,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35025907" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32124352" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19722815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1333,20 +1309,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/common/bottom4.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="770">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/classLearn/showOneClass.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6297335" vertical-offset="233" max-vertical-offset="946">
-          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../we_services/exchange/exchange-admin/src/main/java/com/we/exchange/admin/service/impl/FileLoadServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73204905" vertical-offset="9306" max-vertical-offset="12738">
@@ -1478,13 +1440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5123726" vertical-offset="0" max-vertical-offset="687">
           <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="1672">
-          <caret line="20" column="108" selection-start-line="20" selection-start-column="100" selection-end-line="20" selection-end-column="108" />
         </state>
       </provider>
     </entry>
@@ -1708,16 +1663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3385" max-vertical-offset="7260">
-          <caret line="165" column="18" selection-start-line="165" selection-start-column="18" selection-end-line="165" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/ReviewController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5813" max-vertical-offset="6490">
@@ -1728,8 +1673,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53511703" vertical-offset="846" max-vertical-offset="1650">
+        <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1650">
           <caret line="53" column="166" selection-start-line="53" selection-start-column="166" selection-end-line="53" selection-end-column="166" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/loginOut.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73721343" vertical-offset="660" max-vertical-offset="1672">
+          <caret line="49" column="135" selection-start-line="49" selection-start-column="113" selection-end-line="49" selection-end-column="135" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6507937" vertical-offset="709" max-vertical-offset="1672">
+          <caret line="49" column="131" selection-start-line="49" selection-start-column="131" selection-end-line="49" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/my/my.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.0" vertical-offset="0" max-vertical-offset="2068">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6134185" vertical-offset="5512" max-vertical-offset="7854">
+          <caret line="268" column="13" selection-start-line="268" selection-start-column="13" selection-end-line="268" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
