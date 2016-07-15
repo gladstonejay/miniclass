@@ -138,16 +138,16 @@
         update user_basic set spring = spring+10 where user_id = #{userId,jdbcType=INTEGER}
     </update>
 
-    <select id="selectUserId" resultType = "int" parameterType="java.lang.String">
+    <select id="selectUserId" resultType = "Integer" parameterType="java.lang.String">
         select count(*) from user_basic where user_id = #{userId,jdbcType=VARCHAR};
     </select>
-    <select id="selectUserNname" resultType ="int" parameterType="java.lang.String" >
+    <select id="selectUserNname" resultType ="Integer" parameterType="java.lang.String" >
         select count(*) from user_basic where user_nname = #{userNname,jdbcType=VARCHAR}
     </select>
-    <select id="selectUserPassword" resultType ="int" parameterType="java.lang.String" >
+    <select id="selectUserPassword" resultType ="Integer" parameterType="java.lang.String" >
         select count(*) from user_basic where password = #{password,jdbcType=VARCHAR}
     </select>
-    <select id="selectUseBlackList" resultType="int" parameterType="java.lang.String" >
+    <select id="selectUseBlackList" resultType="Integer" parameterType="java.lang.String" >
         SELECT status from user_basic where user_id = #{userId,jdbcType=VARCHAR}
     </select>
     <select id="getUserRankByScore" resultMap="BaseResultMap">

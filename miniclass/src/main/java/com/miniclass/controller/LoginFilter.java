@@ -37,7 +37,7 @@ public class LoginFilter extends BaseController implements Filter{
         // 获得请求的URL
         String url = request.getRequestURL().toString();
         // 获得session中的对象
-        String userId = new String();
+        String userId = null;
         Cookie[] cookies = request.getCookies();
         if (cookies != null && cookies.length != 0) {
             for (Cookie cookie : cookies) {
@@ -49,7 +49,7 @@ public class LoginFilter extends BaseController implements Filter{
             }
         }
 
-
+        log.info("-------------filter---------------userid is " + userId);
         // url特殊处理：不放行url
         if ( (url.contains("showOneClass.j") || url.endsWith("my.j") || url.contains("showOneTip.j") || url.contains("showOnePPT.j") || url.contains("showOneExam.j")) &&  (null == userId) ){
 

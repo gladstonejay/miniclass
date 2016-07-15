@@ -44,23 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4697194" vertical-offset="4495" max-vertical-offset="6974">
-              <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserBasicController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/UserBasicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1716" max-vertical-offset="3146">
-              <caret line="86" column="58" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3146">
+              <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1423#1436#0" expanded="true" />
@@ -73,21 +61,43 @@
       <file leaf-file-name="ReviewController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/ReviewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6490">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5554" max-vertical-offset="6490">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.53511703" vertical-offset="846" max-vertical-offset="1650">
+              <caret line="53" column="166" selection-start-line="53" selection-start-column="166" selection-end-line="53" selection-end-column="166" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3385" max-vertical-offset="7260">
+              <caret line="165" column="18" selection-start-line="165" selection-start-column="18" selection-end-line="165" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserBasicServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2442">
+              <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,20 +144,20 @@
         <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserRecordMapper.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/entity/UserBasic.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/UserBasicService.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/RankServiceImpl.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/RankService.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/webapp/WEB-INF/jsp/rank/showRank.jsp" />
         <option value="$PROJECT_DIR$/miniclass/pom.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/miniclass/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/RankController.java" />
-        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/UserBasicController.java" />
         <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/ReviewController.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java" />
       </list>
     </option>
   </component>
@@ -479,6 +489,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zhiguo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miniclass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapping" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1171,12 +1207,12 @@
       <workItem from="1467342534171" duration="711000" />
       <workItem from="1467625821723" duration="3160000" />
       <workItem from="1467699308926" duration="359000" />
-      <workItem from="1468550766215" duration="9975000" />
+      <workItem from="1468550766215" duration="12895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400073000" />
+    <option name="totallyTimeSpent" value="402993000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1222,9 +1258,9 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26839378" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35025907" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1260,9 +1296,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.253886" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41658032" sideWeight="0.56429654" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1945629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18017058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1530,24 +1566,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47619048" vertical-offset="298" max-vertical-offset="1100">
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/UserBasicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.92436975" vertical-offset="0" max-vertical-offset="1166">
           <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.389831" vertical-offset="2885" max-vertical-offset="3762">
-          <caret line="159" column="50" selection-start-line="159" selection-start-column="50" selection-end-line="159" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1623,14 +1645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7528455" vertical-offset="1805" max-vertical-offset="2420">
-          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/RankController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35007384" vertical-offset="181" max-vertical-offset="1122">
@@ -1641,20 +1655,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java">
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/resources/mapping/UserBasicMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="58" />
+        <state vertical-scroll-proportion="-2.6949153" vertical-offset="3141" max-vertical-offset="3762">
+          <caret line="150" column="53" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="select from ..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="update user_..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="update user_..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="update user_..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="update user_..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="update user_..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="update user_..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="select count..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="select count..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="select count..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="SELECT statu..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user_basic..." />
+            <marker date="1468574747106" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user_basic..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/dao/UserBasicDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2625418" vertical-offset="371" max-vertical-offset="1100">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/service/impl/UserBasicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="679" max-vertical-offset="2442">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/UserBasicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1716" max-vertical-offset="3146">
-          <caret line="86" column="58" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3146">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1423#1436#0" expanded="true" />
@@ -1663,18 +1708,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3385" max-vertical-offset="7260">
+          <caret line="165" column="18" selection-start-line="165" selection-start-column="18" selection-end-line="165" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/ReviewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6490">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5813" max-vertical-offset="6490">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/MyController.java">
+    <entry file="file://$PROJECT_DIR$/miniclass/src/main/java/com/miniclass/controller/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4697194" vertical-offset="4495" max-vertical-offset="6974">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.53511703" vertical-offset="846" max-vertical-offset="1650">
+          <caret line="53" column="166" selection-start-line="53" selection-start-column="166" selection-end-line="53" selection-end-column="166" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

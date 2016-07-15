@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -79,7 +80,11 @@ public class MyController extends KaptchaExtend {
     public ModelAndView my(HttpServletRequest request)  {
 
         ModelAndView model = new ModelAndView("/my/my");
-        String userId = this.GetUserIdByCookie(request);
+        HttpSession session = request.getSession();
+        String userId = new String();
+        userId = (String)session.getAttribute(CURRENT_USER);
+        log.info("-------------------userid is " + userId);
+        //String userId = this.GetUserIdByCookie(request);
         UserBasic userBasic = null;
         try{
             userBasic = this.userBasicService.getUserById(userId);
@@ -157,7 +162,15 @@ public class MyController extends KaptchaExtend {
         if (b == 0 ){
             errorModel.addObject("errorNname","密码不正确");
         }
-        Integer c = userBasicService.useBlackList(userId);
+        int c = 0;
+        if (b != 0){
+            try {
+                log.info("----------------黑名单验证 userid" + userId);
+                c = this.userBasicService.useBlackList(userId);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
         if (c == 1){
             errorModel.addObject("errorId","该账户已被列入黑名单，如需帮助，请联系管理员");
         }

@@ -20,13 +20,13 @@ public interface UserBasicDao {
 
     int updateByPrimaryKey(UserBasic record);
 
-    int selectUserId(String userId);
+    Integer selectUserId(String userId);
 
-    int selectUserNname(String userNname);
+    Integer selectUserNname(String userNname);
 
-    int selectUserPassword(String password);
+    Integer selectUserPassword(String password);
 
-    int selectUseBlackList(String userId);
+    Integer selectUseBlackList(String userId);
 
     //获得用户的积分排名，20160617改成分为第三季度与第四季度两个季度
     public List<UserBasic> getUserRankByScore();
@@ -36,13 +36,13 @@ public interface UserBasicDao {
     public List<UserBasic> getUserRankByScoreWinter();
 
     //给用户增加10分积分
-    public int updateUserScore(String userId);
+    public Integer updateUserScore(String userId);
 
-    public int updateUserScoreAutumn(String userId);
+    public Integer updateUserScoreAutumn(String userId);
 
-    public int updateUserScoreWinter(String userId);
+    public Integer updateUserScoreWinter(String userId);
 
-    public int updateUserScoreSpring(String userId);
+    public Integer updateUserScoreSpring(String userId);
 
     public UserBasic getUserById(String userId);
 
