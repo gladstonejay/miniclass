@@ -21,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.ResourceBundle;
 
 /**
  * Created by shuaizhiguo on 2016/4/5.
@@ -31,7 +32,8 @@ import java.util.List;
 public class UserBasicController {
 
     private static Logger log = LoggerFactory.getLogger(UserBasicController.class);
-    private static final String CURRENT_USER = "ssr_user";
+    private static final String CURRENT_USER =  ResourceBundle.getBundle("config").getString("cookie_user_name");
+    private static final int LastTime = Integer.parseInt(ResourceBundle.getBundle("config").getString("cookie_last_time"));
     @Resource
     private UserBasicService userService;
 
@@ -43,7 +45,7 @@ public class UserBasicController {
 
         ModelAndView model = new ModelAndView("/classLearn/showUserClass");
         List<VideoInfo> videoInfoList = userService.getAllVideo();
-        List<VideoInfoVo> videoInfoVos = new ArrayList<VideoInfoVo>();
+        List<VideoInfoVo> videoInfoVos = new ArrayList<>();
         VideoInfoVo videoInfoVo = null;
         for (VideoInfo videoInfo : videoInfoList) {
             videoInfoVo = new VideoInfoVo(videoInfo);
@@ -82,10 +84,22 @@ public class UserBasicController {
         int videoId = Integer.parseInt(request.getParameter("id"));
         VideoInfo videoInfo = this.userService.getVideoById(videoId);
 
+
         HttpSession session = request.getSession();
-        String userId = new String();
-        userId = (String)session.getAttribute(CURRENT_USER);
-        //String userId = this.GetUserIdByCookie(request);
+        String userId1 = new String();
+        userId1 = (String)session.getAttribute(CURRENT_USER);
+
+        String userId2 = this.GetUserIdByCookie(request);
+        log.info("----------------通过cookie获取的用户名字是：" + userId2);
+
+        String userId = null;
+        if( userId1.length() == 11){
+            userId = userId1;
+        }
+        else {
+            userId = userId2;
+        }
+        log.info("---------------最终的用户名字是：" + userId);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -121,7 +135,7 @@ public class UserBasicController {
     public String GetUserIdByCookie(HttpServletRequest request){
 
 
-        log.info("------------课程页面");
+        log.info("------------进入课程页面------------");
         String userId = new String();
         Cookie[] cookies = request.getCookies();
         for (Cookie cookie : cookies) {
@@ -129,7 +143,7 @@ public class UserBasicController {
                 userId = cookie.getValue();
             }
         }
-        log.info("------------课程页面用户" + userId);
+        log.info("------------当前课程页面的用户是：" + userId);
 
         return userId;
     }

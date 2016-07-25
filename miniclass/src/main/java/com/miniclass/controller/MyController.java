@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.security.MessageDigest;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.ResourceBundle;
 import javax.annotation.Resource;
 import javax.enterprise.inject.Model;
 import javax.servlet.http.HttpServletRequest;
@@ -36,8 +37,9 @@ import com.miniclass.vo.UserShowInfoVo;
 @RequestMapping("/my")
 public class MyController extends KaptchaExtend {
 
-    private static final String CURRENT_USER = "ssr_user";
-    private static final int LastTime = 60 * 60 * 24 * 200;
+
+    private static final String CURRENT_USER =  ResourceBundle.getBundle("config").getString("cookie_user_name");
+    private static final int LastTime = Integer.parseInt(ResourceBundle.getBundle("config").getString("cookie_last_time"));
     private static Logger log = LoggerFactory.getLogger(MyController.class);
     @Resource
     private UserBasicService userBasicService;
@@ -321,7 +323,9 @@ public class MyController extends KaptchaExtend {
         Cookie cookie = new Cookie( CURRENT_USER , userBasic.getUserId() );
         cookie.setMaxAge( LastTime );
         //设置路径
-        cookie.setPath(request.getContextPath());
+        //cookie.setPath(request.getContextPath());
+        //"/"这样设置保证所有页面都能得到cookie 大坑啊
+        cookie.setPath("/");
         response.addCookie(cookie);
         log.info(" ---------------登录时cookies is " + cookie.toString());
     }

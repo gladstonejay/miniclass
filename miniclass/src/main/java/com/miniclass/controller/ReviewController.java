@@ -20,6 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.ResourceBundle;
 
 /**
  * Created by shuaizhiguo on 2016/4/11.
@@ -30,7 +31,8 @@ import java.util.List;
 public class ReviewController {
 
     private static Logger log = LoggerFactory.getLogger(ReviewController.class);
-    private static final String CURRENT_USER = "ssr_user";
+    private static final String CURRENT_USER =  ResourceBundle.getBundle("config").getString("cookie_user_name");
+    private static final int LastTime = Integer.parseInt(ResourceBundle.getBundle("config").getString("cookie_last_time"));
     @Resource
     private ReviewService reviewService;
     @Resource
@@ -86,9 +88,20 @@ public class ReviewController {
         modelAndView.addObject("weixin",weixin);
 
         HttpSession session = request.getSession();
-        String userId = new String();
-        userId = (String)session.getAttribute(CURRENT_USER);
+        String userId1 = new String();
+        userId1 = (String)session.getAttribute(CURRENT_USER);
         //String userId = this.GetUserIdByCookie(request);
+        String userId2 = this.GetUserIdByCookie(request);
+        log.info("----------------通过cookie获取的用户名字是：" + userId2);
+
+        String userId = null;
+        if( userId1.length() == 11){
+            userId = userId1;
+        }
+        else {
+            userId = userId2;
+        }
+        log.info("---------------最终的用户名字是：" + userId);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -132,9 +145,20 @@ public class ReviewController {
         modelAndView.addObject("ppt",ppt);
 
         HttpSession session = request.getSession();
-        String userId = new String();
-        userId = (String)session.getAttribute(CURRENT_USER);
+        String userId1 = new String();
+        userId1 = (String)session.getAttribute(CURRENT_USER);
         //String userId = this.GetUserIdByCookie(request);
+        String userId2 = this.GetUserIdByCookie(request);
+        log.info("----------------通过cookie获取的用户名字是：" + userId2);
+
+        String userId = null;
+        if( userId1.length() == 11){
+            userId = userId1;
+        }
+        else {
+            userId = userId2;
+        }
+        log.info("---------------最终的用户名字是：" + userId);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -236,9 +260,20 @@ public class ReviewController {
         }
 
         HttpSession session = request.getSession();
-        String userId = new String();
-        userId = (String)session.getAttribute(CURRENT_USER);
+        String userId1 = new String();
+        userId1 = (String)session.getAttribute(CURRENT_USER);
         //String userId = this.GetUserIdByCookie(request);
+        String userId2 = this.GetUserIdByCookie(request);
+        log.info("----------------通过cookie获取的用户名字是：" + userId2);
+
+        String userId = null;
+        if( userId1.length() == 11){
+            userId = userId1;
+        }
+        else {
+            userId = userId2;
+        }
+        log.info("---------------最终的用户名字是：" + userId);
 
         UserRecord userRecord = new UserRecord();
         userRecord.setUserId(userId);
@@ -273,7 +308,7 @@ public class ReviewController {
     public String GetUserIdByCookie(HttpServletRequest request){
 
 
-        log.info("------------登录");
+        log.info("------------学习-------------");
         String userId = new String();
         Cookie[] cookies = request.getCookies();
         for (Cookie cookie : cookies) {
@@ -281,7 +316,7 @@ public class ReviewController {
                 userId = cookie.getValue();
             }
         }
-        log.info("------------用户登录成功" + userId);
+        log.info("------------学习页面用户" + userId);
 
         return userId;
     }
